@@ -1,7 +1,7 @@
 package lach_01298.qmd.recipes;
 
 import lach_01298.qmd.recipe.QMDRecipeHandler;
-import nc.recipe.BasicRecipeHandler;
+import lach_01298.qmd.nco.recipe.BasicRecipeHandler;
 
 import java.util.ArrayList;
 import java.util.List;

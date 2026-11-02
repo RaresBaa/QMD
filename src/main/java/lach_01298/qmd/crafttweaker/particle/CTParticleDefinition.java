@@ -1,7 +1,7 @@
 package lach_01298.qmd.crafttweaker.particle;
 
 import lach_01298.qmd.particle.Particle;
-import nc.util.Lang;
+import lach_01298.qmd.nco.util.Lang;
 
 public class CTParticleDefinition implements IParticleDefinition
 {

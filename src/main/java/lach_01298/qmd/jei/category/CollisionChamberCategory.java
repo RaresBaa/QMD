@@ -9,7 +9,7 @@ import mezz.jei.api.IGuiHelper;
 import mezz.jei.api.gui.IGuiIngredientGroup;
 import mezz.jei.api.gui.IRecipeLayout;
 import mezz.jei.api.ingredients.IIngredients;
-import nc.recipe.IngredientSorption;
+import lach_01298.qmd.nco.recipe.IngredientSorption;
 import net.minecraft.item.ItemStack;
 
 import java.util.ArrayList;

@@ -1,15 +1,15 @@
 package lach_01298.qmd.particleChamber.tile;
 
 import lach_01298.qmd.particleChamber.ParticleChamber;
-import nc.handler.TileInfoHandler;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
-import nc.tile.TileContainerInfo;
+import lach_01298.qmd.nco.handler.TileInfoHandler;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.tile.TileContainerInfo;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import static nc.block.property.BlockProperties.FACING_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FACING_ALL;
 
 public class TileBeamDumpController extends TileParticleChamberPart implements IParticleChamberController<TileBeamDumpController>
 {

@@ -2,7 +2,7 @@ package lach_01298.qmd.machine.gui;
 
 import lach_01298.qmd.QMD;
 import lach_01298.qmd.machine.tile.TileItemAmountFuelProcessor;
-import nclegacy.gui.NCGuiLegacy;
+import lach_01298.qmd.nco.legacy.gui.NCGuiLegacy;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.EntityPlayer;

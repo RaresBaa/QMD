@@ -7,7 +7,7 @@ import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
 import lach_01298.qmd.particle.ParticleStack;
 import mezz.jei.api.gui.IGuiIngredientGroup;
 import mezz.jei.api.ingredients.IIngredients;
-import nc.recipe.IngredientSorption;
+import lach_01298.qmd.nco.recipe.IngredientSorption;
 
 import java.util.List;
 

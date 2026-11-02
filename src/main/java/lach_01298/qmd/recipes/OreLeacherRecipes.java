@@ -1,10 +1,10 @@
 package lach_01298.qmd.recipes;
 
 import lach_01298.qmd.recipe.QMDRecipeHandler;
-import nc.recipe.BasicRecipeHandler;
-import nc.recipe.ingredient.EmptyItemIngredient;
-import nc.util.FluidStackHelper;
-import nc.util.OreDictHelper;
+import lach_01298.qmd.nco.recipe.BasicRecipeHandler;
+import lach_01298.qmd.nco.recipe.ingredient.EmptyItemIngredient;
+import lach_01298.qmd.nco.util.FluidStackHelper;
+import lach_01298.qmd.nco.util.OreDictHelper;
 
 import java.util.ArrayList;
 import java.util.List;

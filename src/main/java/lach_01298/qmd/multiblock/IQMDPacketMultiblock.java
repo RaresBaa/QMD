@@ -1,9 +1,9 @@
 package lach_01298.qmd.multiblock;
 
 import lach_01298.qmd.network.QMDPackets;
-import nc.multiblock.*;
-import nc.network.multiblock.MultiblockUpdatePacket;
-import nc.tile.multiblock.ITileMultiblockPart;
+import lach_01298.qmd.nco.multiblock.*;
+import lach_01298.qmd.nco.network.multiblock.MultiblockUpdatePacket;
+import lach_01298.qmd.nco.tile.multiblock.ITileMultiblockPart;
 import net.minecraft.entity.player.*;
 
 public interface IQMDPacketMultiblock<MULTIBLOCK extends Multiblock<MULTIBLOCK, T>, T extends ITileMultiblockPart<MULTIBLOCK, T>, PACKET extends MultiblockUpdatePacket> extends IPacketMultiblock<MULTIBLOCK, T, PACKET>

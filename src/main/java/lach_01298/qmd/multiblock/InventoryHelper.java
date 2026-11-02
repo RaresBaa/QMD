@@ -1,6 +1,6 @@
 package lach_01298.qmd.multiblock;
 
-import nc.tile.ITile;
+import lach_01298.qmd.nco.tile.ITile;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 

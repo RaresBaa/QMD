@@ -11,7 +11,7 @@ import net.minecraft.util.EnumFacing.Axis;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import static nc.block.property.BlockProperties.AXIS_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.AXIS_ALL;
 
 public class BlockVacuumChamberPlasmaNozzle extends BlockVacuumChamberPart
 {

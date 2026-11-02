@@ -20,6 +20,31 @@
                 "textures": {
                     "layer0": "qmd:items/materials/ingot/mercury"
                 }
+            },
+            "dysprosium": {
+                "textures": {
+                    "layer0": "qmd:items/materials/ingot/dysprosium"
+                }
+            },
+            "gadolinium": {
+                "textures": {
+                    "layer0": "qmd:items/materials/ingot/gadolinium"
+                }
+            },
+            "holmium": {
+                "textures": {
+                    "layer0": "qmd:items/materials/ingot/holmium"
+                }
+            },
+            "palladium": {
+                "textures": {
+                    "layer0": "qmd:items/materials/ingot/palladium"
+                }
+            },
+            "samarium": {
+                "textures": {
+                    "layer0": "qmd:items/materials/ingot/samarium"
+                }
             }
         }
     }

@@ -1,16 +1,16 @@
 package lach_01298.qmd.jei.category;
 
 import lach_01298.qmd.QMD;
-import nc.integration.jei.wrapper.JEIRecipeWrapper;
+import lach_01298.qmd.nco.integration.jei.wrapper.JEIRecipeWrapper;
 import mezz.jei.api.IGuiHelper;
 import mezz.jei.api.gui.IDrawable;
 import mezz.jei.api.gui.IRecipeLayout;
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.recipe.IRecipeCategory;
-import nc.recipe.ingredient.ChanceFluidIngredient;
-import nc.recipe.ingredient.ChanceItemIngredient;
-import nc.util.Lang;
-import nc.util.NCMath;
+import lach_01298.qmd.nco.recipe.ingredient.ChanceFluidIngredient;
+import lach_01298.qmd.nco.recipe.ingredient.ChanceItemIngredient;
+import lach_01298.qmd.nco.util.Lang;
+import lach_01298.qmd.nco.util.NCMath;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.TextFormatting;

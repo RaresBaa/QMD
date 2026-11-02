@@ -1,7 +1,7 @@
 package lach_01298.qmd.recipes;
 
 import lach_01298.qmd.recipe.QMDRecipeHandler;
-import nc.recipe.BasicRecipeHandler;
+import lach_01298.qmd.nco.recipe.BasicRecipeHandler;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public class LiquefierRecipes extends QMDRecipeHandler
 	public void addRecipes()
 	{
 		//addRecipe(fluidInput, fluidOutput, double base RF, int base heat, int inversion temperature,int compressed gas temperature, double pressure coefficient)
-		addRecipe(fluidStack("helium", 64),fluidStack("liquid_helium", 1), 50D, 1000, 40, 400, 0.1);
+		addRecipe(fluidStack("helium", 64),fluidStack("liquidhelium", 1), 50D, 1000, 40, 400, 0.1);
 		addRecipe(fluidStack("nitrogen", 64),fluidStack("liquid_nitrogen", 1), 50D, 1000, 600, 450, 0.25);
 		addRecipe(fluidStack("hydrogen", 64),fluidStack("liquid_hydrogen", 1), 50D, 1000, 200, 400, 0.1);
 		addRecipe(fluidStack("neon", 64),fluidStack("liquid_neon", 1), 50D, 1000, 230, 400, 0.2);

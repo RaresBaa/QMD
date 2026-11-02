@@ -7,7 +7,7 @@ import lach_01298.qmd.enums.MaterialTypes.CellType;
 import lach_01298.qmd.util.Util;
 import nc.capability.radiation.entity.IEntityRads;
 import nc.radiation.RadiationHelper;
-import nc.util.*;
+import lach_01298.qmd.nco.util.*;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.*;
 import net.minecraft.entity.player.EntityPlayer;

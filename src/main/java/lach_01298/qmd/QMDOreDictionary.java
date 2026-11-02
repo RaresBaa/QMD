@@ -3,7 +3,6 @@ package lach_01298.qmd;
 import lach_01298.qmd.block.QMDBlocks;
 import lach_01298.qmd.enums.MaterialTypes.*;
 import lach_01298.qmd.item.*;
-import nc.handler.OreDictHandler;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
@@ -161,10 +160,30 @@ public class QMDOreDictionary
 		OreDictionary.registerOre("cellTauonium",IItemParticleAmount.fullItem(new ItemStack(QMDItems.cell, 1, CellType.TAUONIUM.getID())));
 		OreDictionary.registerOre("cellGlueballs",IItemParticleAmount.fullItem(new ItemStack(QMDItems.cell, 1, CellType.GLUEBALLS.getID())));
 		
+		OreDictionary.registerOre("dustBismuth", new ItemStack(QMDItems.dust2, 1, DustType2.BISMUTH.getID()));
+		OreDictionary.registerOre("dustMolybdenum", new ItemStack(QMDItems.dust2, 1, DustType2.MOLYBDENUM.getID()));
+		OreDictionary.registerOre("dustPalladium", new ItemStack(QMDItems.dust2, 1, DustType2.PALLADIUM.getID()));
+		OreDictionary.registerOre("dustPolonium", new ItemStack(QMDItems.dust2, 1, DustType2.POLONIUM.getID()));
+		OreDictionary.registerOre("dustRadium", new ItemStack(QMDItems.dust2, 1, DustType2.RADIUM.getID()));
+		OreDictionary.registerOre("dustDysprosium", new ItemStack(QMDItems.dust2, 1, DustType2.DYSPROSIUM.getID()));
+		OreDictionary.registerOre("dustGadolinium", new ItemStack(QMDItems.dust2, 1, DustType2.GADOLINIUM.getID()));
+		OreDictionary.registerOre("dustHolmium", new ItemStack(QMDItems.dust2, 1, DustType2.HOLMIUM.getID()));
+		OreDictionary.registerOre("dustTerbium", new ItemStack(QMDItems.dust2, 1, DustType2.TERBIUM.getID()));
+		OreDictionary.registerOre("dustRuthenium", new ItemStack(QMDItems.dust2, 1, DustType2.RUTHENIUM.getID()));
+		OreDictionary.registerOre("dustRuthenium106", new ItemStack(QMDItems.dust2, 1, DustType2.RUTHENIUM_106.getID()));
+		OreDictionary.registerOre("dustStrontium90", new ItemStack(QMDItems.dust2, 1, DustType2.STRONTIUM_90.getID()));
+		OreDictionary.registerOre("dustCaesium137", new ItemStack(QMDItems.dust2, 1, DustType2.CAESIUM_137.getID()));
+		OreDictionary.registerOre("dustEuropium155", new ItemStack(QMDItems.dust2, 1, DustType2.EUROPIUM_155.getID()));
+		OreDictionary.registerOre("dustPromethium147", new ItemStack(QMDItems.dust2, 1, DustType2.PROMETHIUM_147.getID()));
+		OreDictionary.registerOre("dustProtactinium233", new ItemStack(QMDItems.dust2, 1, DustType2.PROTACTINIUM_233.getID()));
+		OreDictionary.registerOre("ingotDysprosium", new ItemStack(QMDItems.ingot2, 1, IngotType2.DYSPROSIUM.getID()));
+		OreDictionary.registerOre("ingotGadolinium", new ItemStack(QMDItems.ingot2, 1, IngotType2.GADOLINIUM.getID()));
+		OreDictionary.registerOre("ingotHolmium", new ItemStack(QMDItems.ingot2, 1, IngotType2.HOLMIUM.getID()));
+		OreDictionary.registerOre("ingotPalladium", new ItemStack(QMDItems.ingot2, 1, IngotType2.PALLADIUM.getID()));
+		OreDictionary.registerOre("ingotSamarium", new ItemStack(QMDItems.ingot2, 1, IngotType2.SAMARIUM.getID()));
+		OreDictionary.registerOre("ingotCopernicium291", new ItemStack(QMDItems.copernicium, 1, 0));
 		OreDictionary.registerOre("blockStrontium90", new ItemStack(QMDBlocks.strontium90));
 		
-		OreDictHandler.registerIsotopes(QMDItems.copernicium, "Copernicium", 291);
-		OreDictHandler.registerFuels(QMDItems.pellet_copernicium, QMDItems.fuel_copernicium, QMDItems.depleted_fuel_copernicium, "MIX291");
 	}
 
 }

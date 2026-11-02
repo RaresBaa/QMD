@@ -4,7 +4,7 @@ import lach_01298.qmd.config.QMDConfig;
 import lach_01298.qmd.enums.BlockTypes.*;
 import lach_01298.qmd.enums.ICoolerEnum;
 import nc.Global;
-import nc.util.*;
+import lach_01298.qmd.nco.util.*;
 import net.minecraft.util.IStringSerializable;
 
 public class QMDInfo
@@ -193,31 +193,6 @@ public class QMDInfo
 
 	// Fission Neutron Shields
 
-	public static String[][] neutronShieldFixedInfo()
-	{
-		NeutronShieldType[] values = NeutronShieldType.values();
-		String[][] info = new String[values.length][];
-		for (int i = 0; i < values.length; i++)
-		{
-			info[i] = new String[]{
-					Lang.localize("info." + Global.MOD_ID + ".fission_shield.heat_per_flux.fixd",
-							UnitHelper.prefix(values[i].getHeatPerFlux(), 5, "H/t/N")),
-					Lang.localize("info." + Global.MOD_ID + ".fission_shield.efficiency.fixd",
-							Math.round(100D * values[i].getEfficiency()) + "%"),};
-		}
-		return info;
-	}
-
-	public static String[][] neutronShieldInfo()
-	{
-		NeutronShieldType[] values = NeutronShieldType.values();
-		String[][] info = new String[values.length][];
-		for (int i = 0; i < values.length; i++)
-		{
-			info[i] = InfoHelper.formattedInfo(Lang.localize("tile." + Global.MOD_ID + ".fission_shield.desc"));
-		}
-		return info;
-	}
 
 
 	// Heater info
@@ -268,6 +243,11 @@ public class QMDInfo
 			info[i] = InfoHelper.formattedInfo(Lang.localize("tile." + QMD.MOD_ID + ".liquefier_compressor.desc"));
 		}
 		return info;
+	}
+
+	public static String liquefierTubeFixedInfo(lach_01298.qmd.nco.multiblock.hx.HeatExchangerTubeType type)
+	{
+		return Lang.localize("info." + QMD.MOD_ID + ".liquefier_tube.heat_transfer", type.getHeatTransferCoefficient());
 	}
 
 	public static String liquefierNozzleFixedInfo()

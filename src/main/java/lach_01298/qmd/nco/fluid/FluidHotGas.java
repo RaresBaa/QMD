@@ -1,0 +1,30 @@
+package lach_01298.qmd.nco.fluid;
+
+import net.minecraft.init.SoundEvents;
+
+public class FluidHotGas extends NCFluid {
+	
+	public FluidHotGas(String fluidName) {
+		super(fluidName, false);
+		setDensity(-10);
+		setGaseous(true);
+		setViscosity(40);
+		setTemperature(1000);
+		setEmptySound(SoundEvents.BLOCK_FIRE_EXTINGUISH);
+		setFillSound(SoundEvents.BLOCK_FIRE_EXTINGUISH);
+	}
+	
+	public FluidHotGas(String fluidName, Integer color) {
+		this(fluidName, color, 1000);
+	}
+	
+	public FluidHotGas(String fluidName, Integer color, Integer temperature) {
+		super(fluidName, false, "gas", color);
+		setDensity(-10);
+		setGaseous(true);
+		setViscosity(40);
+		setTemperature(temperature);
+		setEmptySound(SoundEvents.BLOCK_FIRE_EXTINGUISH);
+		setFillSound(SoundEvents.BLOCK_FIRE_EXTINGUISH);
+	}
+}

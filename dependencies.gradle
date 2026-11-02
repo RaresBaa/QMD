@@ -38,28 +38,29 @@
  * For more details, see https://docs.gradle.org/8.4/userguide/java_library_plugin.html#sec:java_library_configurations_graph
  */
 dependencies {
-	api("zone.rong:mixinbooter:11.17")
-	api("com.cleanroommc:groovyscript:1.4.3") { transitive = false }
+	compileOnly("mezz.jei:jei_1.12.2:4.16.1.302")
+	compileOnly rfg.deobf("curse.maven:top-245211:2667280")
+	compileOnly("zone.rong:mixinbooter:11.17")
+	compileOnly("com.cleanroommc:groovyscript:1.4.3") { transitive = false }
 
-	implementation("cofh:CoFHCore:1.12.2-4.6.3.27:universal") { transitive = false }
-	implementation("codechicken:CodeChickenLib:1.12.2-+:universal")
-	implementation("cofh:RedstoneFlux:1.12-+:universal")
-	implementation("CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.+")
-	implementation("net.darkhax.bookshelf:Bookshelf-1.12.2:2.3.590")
-	implementation("net.darkhax.gamestages:GameStages-1.12.2:2.0.123")
-	implementation("vazkii.patchouli:Patchouli:1.0-23.6")
-	implementation("com.mod-buildcraft:buildcraft-api:7.99.24.8")
-	implementation rfg.deobf("curse.maven:baubles-227083:2518667")
-	implementation rfg.deobf("curse.maven:base-246996:3440963")
-	implementation rfg.deobf("curse.maven:contenttweaker-237065:3331364")
-	implementation rfg.deobf("curse.maven:opencomputers-223008:6608365")
-	implementation rfg.deobf("curse.maven:mantle-74924:2713386")
-	implementation rfg.deobf("curse.maven:industrial-craft-242638:3838713")
-	implementation rfg.deobf("curse.maven:gregtech-ce-unofficial-557242:5519022")
-	implementation rfg.deobf("curse.maven:mekanism-268560:2835175")
-	implementation rfg.deobf("curse.maven:hwyla-253449:2568751")
-	implementation rfg.deobf("curse.maven:nuclearcraft-overhauled-336895:8197222")
-	implementation rfg.deobf("curse.maven:nco-java-legacy-lib-1032769:5414463")
+	compileOnly("cofh:CoFHCore:1.12.2-4.6.3.27:universal") { transitive = false }
+	compileOnly("codechicken:CodeChickenLib:1.12.2-+:universal")
+	compileOnly("cofh:RedstoneFlux:1.12-+:universal")
+	compileOnly("CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.+")
+	compileOnly("net.darkhax.bookshelf:Bookshelf-1.12.2:2.3.590")
+	compileOnly("net.darkhax.gamestages:GameStages-1.12.2:2.0.123")
+	compileOnly("vazkii.patchouli:Patchouli:1.0-23.6")
+	compileOnly("com.mod-buildcraft:buildcraft-api:7.99.24.8")
+	compileOnly rfg.deobf("curse.maven:baubles-227083:2518667")
+	compileOnly rfg.deobf("curse.maven:base-246996:3440963")
+	compileOnly rfg.deobf("curse.maven:contenttweaker-237065:3331364")
+	compileOnly rfg.deobf("curse.maven:opencomputers-223008:6608365")
+	compileOnly rfg.deobf("curse.maven:mantle-74924:2713386")
+	compileOnly rfg.deobf("curse.maven:industrial-craft-242638:3838713")
+	compileOnly rfg.deobf("curse.maven:gregtech-ce-unofficial-557242:5519022")
+	compileOnly rfg.deobf("curse.maven:mekanism-268560:2835175")
+	compileOnly rfg.deobf("curse.maven:hwyla-253449:2568751")
+	implementation rfg.deobf("curse.maven:nuclearcraft-mod-226254:8213196")
 }
 
 configurations {
@@ -68,4 +69,8 @@ configurations {
         exclude group: "org.scala-lang.modules"
         exclude group: "org.scala-lang.plugins"
     }
+}
+
+tasks.withType(JavaCompile).configureEach {
+	options.compilerArgs += ["-Xmaxerrs", "20000", "-Xmaxwarns", "0"]
 }

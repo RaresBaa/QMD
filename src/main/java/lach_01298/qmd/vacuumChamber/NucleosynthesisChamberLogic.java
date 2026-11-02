@@ -11,10 +11,10 @@ import lach_01298.qmd.particle.ParticleStack;
 import lach_01298.qmd.recipe.*;
 import lach_01298.qmd.recipes.QMDRecipes;
 import lach_01298.qmd.vacuumChamber.tile.*;
-import nc.recipe.ingredient.*;
-import nc.tile.internal.fluid.Tank;
-import nc.tile.internal.heat.HeatBuffer;
-import nc.tile.multiblock.TilePartAbstract.SyncReason;
+import lach_01298.qmd.nco.recipe.ingredient.*;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.tile.internal.heat.HeatBuffer;
+import lach_01298.qmd.nco.tile.multiblock.TilePartAbstract.SyncReason;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -29,7 +29,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import java.util.*;
 
 import static lach_01298.qmd.recipes.QMDRecipes.*;
-import static nc.block.property.BlockProperties.*;
+import static lach_01298.qmd.nco.block.property.BlockProperties.*;
 
 public class NucleosynthesisChamberLogic extends VacuumChamberLogic
 {
@@ -126,7 +126,7 @@ public class NucleosynthesisChamberLogic extends VacuumChamberLogic
 		multiblock.tanks.get(6).setCapacity(QMDConfig.vacuum_chamber_output_tank_capacity * 10);
 		multiblock.tanks.get(7).setCapacity(QMDConfig.vacuum_chamber_output_tank_capacity * 10);
 		
-		casingHeatBuffer.setHeatCapacity(QMDConfig.accelerator_base_heat_capacity * getCapacityMultiplier()*1000);
+		casingHeatBuffer.setHeatCapacity(QMDConfig.accelerator_base_heat_capacity * getCapacityMultiplier()*1000L);
 		
 		if (!getWorld().isRemote)
 		{

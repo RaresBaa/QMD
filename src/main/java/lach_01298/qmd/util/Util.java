@@ -4,7 +4,7 @@ import lach_01298.qmd.QMD;
 import lach_01298.qmd.entity.EntityGammaFlash;
 import nc.capability.radiation.entity.IEntityRads;
 import nc.radiation.RadiationHelper;
-import nc.util.DamageSources;
+import lach_01298.qmd.nco.util.DamageSources;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;

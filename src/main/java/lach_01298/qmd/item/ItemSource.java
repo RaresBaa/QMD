@@ -2,10 +2,10 @@ package lach_01298.qmd.item;
 
 import lach_01298.qmd.enums.MaterialTypes.SourceType;
 import lach_01298.qmd.util.Units;
-import nc.item.NCItem;
-import nc.util.InfoHelper;
-import nc.util.Lang;
-import nc.util.StackHelper;
+import lach_01298.qmd.nco.item.NCItem;
+import lach_01298.qmd.nco.util.InfoHelper;
+import lach_01298.qmd.nco.util.Lang;
+import lach_01298.qmd.nco.util.StackHelper;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -59,6 +59,8 @@ public class ItemSource extends NCItem implements IItemParticleAmount
 					return SourceType.IRIDIUM_192.getCapacity();
 				case 4:
 					return SourceType.CALCIUM_48.getCapacity();
+				case 5:
+					return SourceType.PLUTONIUM_BERYLLIUM.getCapacity();
 			}
 		}
 		return 0;

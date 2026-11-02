@@ -3,7 +3,7 @@ package lach_01298.qmd.item;
 import lach_01298.qmd.QMDDamageSources;
 import lach_01298.qmd.config.QMDConfig;
 import nc.capability.radiation.entity.IEntityRads;
-import nc.item.NCItemFood;
+import lach_01298.qmd.nco.item.NCItemFood;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.*;

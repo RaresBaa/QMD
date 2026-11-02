@@ -2,8 +2,8 @@ package lach_01298.qmd.recipes;
 
 import lach_01298.qmd.recipe.ingredient.WorldIngredient;
 import lach_01298.qmd.util.Util;
-import nc.recipe.ingredient.FluidIngredient;
-import nc.util.FluidRegHelper;
+import lach_01298.qmd.nco.recipe.ingredient.FluidIngredient;
+import lach_01298.qmd.nco.util.FluidRegHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;

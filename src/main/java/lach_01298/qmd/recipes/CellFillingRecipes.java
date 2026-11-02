@@ -2,9 +2,9 @@ package lach_01298.qmd.recipes;
 
 import lach_01298.qmd.item.QMDItems;
 import lach_01298.qmd.recipe.QMDRecipeHandler;
-import nc.recipe.BasicRecipeHandler;
-import nc.recipe.RecipeHelper;
-import nc.recipe.ingredient.IItemIngredient;
+import lach_01298.qmd.nco.recipe.BasicRecipeHandler;
+import lach_01298.qmd.nco.recipe.RecipeHelper;
+import lach_01298.qmd.nco.recipe.ingredient.IItemIngredient;
 import net.minecraft.item.ItemStack;
 
 import java.util.ArrayList;

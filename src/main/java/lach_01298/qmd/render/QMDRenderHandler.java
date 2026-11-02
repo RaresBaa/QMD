@@ -7,7 +7,7 @@ import lach_01298.qmd.liquefier.tile.TileLiquefierController;
 import lach_01298.qmd.render.entity.*;
 import lach_01298.qmd.render.tile.*;
 import lach_01298.qmd.vacuumChamber.tile.*;
-import nc.util.*;
+import lach_01298.qmd.nco.util.*;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.entity.Entity;
 import net.minecraftforge.fml.client.registry.*;

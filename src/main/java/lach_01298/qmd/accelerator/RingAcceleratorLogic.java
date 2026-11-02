@@ -13,7 +13,7 @@ import lach_01298.qmd.particle.Particle;
 import lach_01298.qmd.particle.ParticleStack;
 import lach_01298.qmd.particle.Particles;
 import lach_01298.qmd.util.Equations;
-import nc.tile.multiblock.TilePartAbstract.SyncReason;
+import lach_01298.qmd.nco.tile.multiblock.TilePartAbstract.SyncReason;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;

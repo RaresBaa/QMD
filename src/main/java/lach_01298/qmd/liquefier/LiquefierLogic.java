@@ -10,14 +10,15 @@ import lach_01298.qmd.multiblock.network.*;
 import lach_01298.qmd.recipe.*;
 import lach_01298.qmd.recipes.QMDRecipes;
 import nc.Global;
-import nc.multiblock.hx.*;
-import nc.network.multiblock.*;
-import nc.recipe.ingredient.IFluidIngredient;
-import nc.tile.hx.*;
-import nc.tile.internal.energy.EnergyStorage;
-import nc.tile.internal.fluid.Tank;
-import nc.tile.multiblock.TilePartAbstract;
-import nc.util.*;
+import lach_01298.qmd.nco.multiblock.hx.*;
+import lach_01298.qmd.nco.network.multiblock.*;
+import lach_01298.qmd.nco.recipe.BasicRecipe;
+import lach_01298.qmd.nco.recipe.ingredient.IFluidIngredient;
+import lach_01298.qmd.nco.tile.hx.*;
+import lach_01298.qmd.nco.tile.internal.energy.EnergyStorage;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.tile.multiblock.TilePartAbstract;
+import lach_01298.qmd.nco.util.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
@@ -25,12 +26,12 @@ import net.minecraft.util.math.*;
 import net.minecraft.world.World;
 import org.apache.commons.lang3.tuple.Pair;
 
-import javax.annotation.Nonnull;
+import javax.annotation.*;
 import java.lang.reflect.Field;
 import java.util.*;
 import java.util.function.LongSupplier;
 
-import static nc.block.property.BlockProperties.ACTIVE;
+import static lach_01298.qmd.nco.block.property.BlockProperties.ACTIVE;
 
 public class LiquefierLogic extends HeatExchangerLogic
 {
@@ -670,6 +671,21 @@ public class LiquefierLogic extends HeatExchangerLogic
 		coolantOut = 0;
 	}
 
+
+	// Coolant recipes store their heat as an int, not as a heat exchanger recipe's double
+	@Override
+	public void setInletRecipeStats(TileHeatExchangerInlet inlet, @Nullable BasicRecipe recipe)
+	{
+		if (recipe == null)
+		{
+			super.setInletRecipeStats(inlet, null);
+			return;
+		}
+		inlet.processor.baseProcessTime = (int) recipe.getExtras().get(0);
+		inlet.inputTemperature = (int) recipe.getExtras().get(1);
+		inlet.outputTemperature = (int) recipe.getExtras().get(2);
+		inlet.isHeating = inlet.inputTemperature < inlet.outputTemperature;
+	}
 
 	public void refreshRecipes()
 	{

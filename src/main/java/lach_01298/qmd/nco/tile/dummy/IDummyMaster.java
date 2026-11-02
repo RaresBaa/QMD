@@ -1,0 +1,18 @@
+package lach_01298.qmd.nco.tile.dummy;
+
+import lach_01298.qmd.nco.tile.ITile;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+
+public interface IDummyMaster extends ITile {
+	
+	default void onDummyNeighborChanged(IBlockState state, World world, BlockPos pos, BlockPos fromPos) {
+		refreshIsRedstonePowered(world, pos);
+	}
+	
+	@Override
+	default boolean checkIsRedstonePowered(World world, BlockPos pos) {
+		return ITile.super.checkIsRedstonePowered(world, pos) || world.isBlockPowered(getTilePos());
+	}
+}

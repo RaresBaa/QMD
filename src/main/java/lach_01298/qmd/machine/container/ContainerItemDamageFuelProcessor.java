@@ -3,7 +3,7 @@ package lach_01298.qmd.machine.container;
 import lach_01298.qmd.item.IItemParticleAmount;
 import lach_01298.qmd.machine.tile.TileItemAmountFuelProcessor;
 import lach_01298.qmd.recipe.QMDRecipeHandler;
-import nclegacy.container.ContainerTileLegacy;
+import lach_01298.qmd.nco.legacy.container.ContainerTileLegacy;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;

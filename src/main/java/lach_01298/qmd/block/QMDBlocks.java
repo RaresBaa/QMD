@@ -4,17 +4,18 @@ import lach_01298.qmd.*;
 import lach_01298.qmd.accelerator.block.*;
 import lach_01298.qmd.config.QMDConfig;
 import lach_01298.qmd.enums.BlockTypes.*;
-import lach_01298.qmd.fission.block.*;
 import lach_01298.qmd.liquefier.block.*;
 import lach_01298.qmd.machine.block.BlockQMDProcessor;
 import lach_01298.qmd.particleChamber.block.*;
 import lach_01298.qmd.pipe.BlockBeamline;
 import lach_01298.qmd.vacuumChamber.block.*;
-import nc.block.item.NCItemBlock;
-import nc.block.tile.ITileType;
+import lach_01298.qmd.nco.block.hx.*;
+import lach_01298.qmd.nco.block.item.NCItemBlock;
+import lach_01298.qmd.nco.multiblock.hx.HeatExchangerTubeType;
+import lach_01298.qmd.nco.block.tile.ITileType;
 import nc.init.NCBlocks;
-import nc.util.*;
-import nclegacy.block.item.ItemBlockMetaLegacy;
+import lach_01298.qmd.nco.util.*;
+import lach_01298.qmd.nco.legacy.block.item.ItemBlockMetaLegacy;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -24,7 +25,7 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
-import static nc.config.NCConfig.turbine_mb_per_blade;
+
 
 
 public class QMDBlocks
@@ -76,9 +77,6 @@ public class QMDBlocks
 	public static Block atmosphereCollector;
 	public static Block liquidCollector;
 
-	public static Block fissionReflector;
-	public static Block fissionShield;
-	public static Block rtgStrontium;
 	
 	public static Block dischargeLamp;
 	public static Block dischargeLamp2;
@@ -106,10 +104,17 @@ public class QMDBlocks
 	public static Block liquefierCompressor;
 	public static Block liquefierPort;
 	public static Block liquefierEnergyPort;
+	public static Block liquefierCasing;
+	public static Block liquefierGlass;
+	public static Block liquefierBaffle;
+	public static Block liquefierInlet;
+	public static Block liquefierOutlet;
+	public static Block liquefierTubeCopper;
+	public static Block liquefierTubeHardCarbon;
+	public static Block liquefierTubeThermoconducting;
 
 	public static Block creativeParticleSource;
 	
-	public static Block turbineBladeSuperAlloy;
 
 	public static Block strontium90;
 	public static Block greenLuminousPaint;
@@ -166,10 +171,7 @@ public class QMDBlocks
 		atmosphereCollector = withName(new BlockFluidCollector(FluidCollectorType.ATMOSPHERE_COLLECTOR));
 		liquidCollector = withName(new BlockFluidCollector(FluidCollectorType.LIQUID_COLLECTOR));
 		
-		fissionReflector = withName(new BlockFissionReflector(), "fission_reflector");
-		fissionShield = withName(new QMDBlockFissionShield(), "fission_shield");
 
-		rtgStrontium = withName(new QMDBlockRTG(RTGType.STRONTIUM), "rtg_strontium");
 
 		dischargeLamp = withName(new BlockLamp(), "discharge_lamp");
 		dischargeLamp2 = withName(new BlockLamp2(), "discharge_lamp2");
@@ -197,6 +199,14 @@ public class QMDBlocks
 		liquefierCompressor= withName(new BlockLiquefierCompressor(), "liquefier_compressor");
 		liquefierPort= withName(new BlockLiquefierPort(), "liquefier_fluid_port");
 		liquefierEnergyPort= withName(new BlockLiquefierEnergyPort(), "liquefier_energy_port");
+		liquefierCasing = withName(new BlockHeatExchangerCasing(), "liquefier_casing");
+		liquefierGlass = withName(new BlockHeatExchangerGlass(), "liquefier_glass");
+		liquefierBaffle = withName(new BlockHeatExchangerBaffle(), "liquefier_baffle");
+		liquefierInlet = withName(new BlockHeatExchangerInlet(), "liquefier_inlet");
+		liquefierOutlet = withName(new BlockHeatExchangerOutlet(), "liquefier_outlet");
+		liquefierTubeCopper = withName(new BlockHeatExchangerTube(HeatExchangerTubeType.COPPER), "liquefier_tube_copper");
+		liquefierTubeHardCarbon = withName(new BlockHeatExchangerTube(HeatExchangerTubeType.HARD_CARBON), "liquefier_tube_hard_carbon");
+		liquefierTubeThermoconducting = withName(new BlockHeatExchangerTube(HeatExchangerTubeType.THERMOCONDUCTING), "liquefier_tube_thermoconducting");
 
 		strontium90 = withName(new BlockQMD(Material.IRON), "strontium_90_block");
 		greenLuminousPaint = withName(new BlockLuminousPaint(), "block_green_luminous_paint");
@@ -205,7 +215,6 @@ public class QMDBlocks
 		
 		creativeParticleSource = withName(new BlockCreativeParticleSource(), "creative_particle_source");
 		
-		turbineBladeSuperAlloy = withName(new QMDBlockTurbineBlade(TurbineBladeType.SUPER_ALLOY), "turbine_blade_super_alloy");
 
 	}
 	
@@ -258,11 +267,8 @@ public class QMDBlocks
 		registerBlock(atmosphereCollector, Lang.localize("info.qmd.item.energy_used",UnitHelper.prefix(QMDConfig.processor_power[1], 5, "RF/t")),TextFormatting.GRAY+Lang.localize(infoLine("atmosphere_collector")));
 		registerBlock(liquidCollector, Lang.localize("info.qmd.item.energy_used",UnitHelper.prefix(QMDConfig.processor_power[2], 5, "RF/t")),TextFormatting.GRAY+Lang.localize(infoLine("liquid_collector")));
 
-		registerBlock(fissionReflector, new ItemBlockMetaLegacy(fissionReflector, NeutronReflectorType.class, TextFormatting.AQUA));
-		registerBlock(fissionShield,new ItemBlockMetaLegacy(fissionShield, NeutronShieldType.class, new TextFormatting[] {TextFormatting.YELLOW, TextFormatting.LIGHT_PURPLE}, QMDInfo.neutronShieldFixedInfo(), TextFormatting.AQUA, QMDInfo.neutronShieldInfo()));
 		
 		
-		registerBlock(rtgStrontium,InfoHelper.formattedInfo(NCBlocks.infoLine(nc.Global.MOD_ID, "rtg"), UnitHelper.prefix(QMDConfig.rtg_power[0], 5, "RF/t")));
 		
 		registerBlock(dischargeLamp, new ItemBlockMetaLegacy(dischargeLamp, LampType.class));
 		registerBlock(dischargeLamp2, new ItemBlockMetaLegacy(dischargeLamp2, LampType2.class));
@@ -291,6 +297,14 @@ public class QMDBlocks
 		registerBlock(liquefierCompressor, new ItemBlockMetaLegacy(liquefierCompressor, CompressorType.class,TextFormatting.GREEN, QMDInfo.compressorFixedInfo(),TextFormatting.AQUA,QMDInfo.compressorInfo()));
 		registerBlock(liquefierPort);
 		registerBlock(liquefierEnergyPort);
+		registerBlock(liquefierCasing);
+		registerBlock(liquefierGlass);
+		registerBlock(liquefierBaffle);
+		registerBlock(liquefierInlet);
+		registerBlock(liquefierOutlet);
+		registerBlock(liquefierTubeCopper, TextFormatting.GREEN + QMDInfo.liquefierTubeFixedInfo(HeatExchangerTubeType.COPPER));
+		registerBlock(liquefierTubeHardCarbon, TextFormatting.GREEN + QMDInfo.liquefierTubeFixedInfo(HeatExchangerTubeType.HARD_CARBON));
+		registerBlock(liquefierTubeThermoconducting, TextFormatting.GREEN + QMDInfo.liquefierTubeFixedInfo(HeatExchangerTubeType.THERMOCONDUCTING));
 
 		registerBlock(strontium90);
 		registerBlock(greenLuminousPaint);
@@ -298,7 +312,6 @@ public class QMDBlocks
 		registerBlock(orangeLuminousPaint);
 		
 		registerBlock(creativeParticleSource);
-		registerBlock(turbineBladeSuperAlloy, new TextFormatting[] {TextFormatting.LIGHT_PURPLE, TextFormatting.GRAY}, new String[] {Lang.localize(NCBlocks.fixedLine(nc.Global.MOD_ID, "turbine_rotor_blade_efficiency"), Math.round(100D * QMDConfig.turbine_blade_efficiency[0]) + "%"), Lang.localize(NCBlocks.fixedLine(nc.Global.MOD_ID, "turbine_rotor_blade_expansion"), Math.round(100D * QMDConfig.turbine_blade_expansion[0]) + "%")}, TextFormatting.AQUA, InfoHelper.formattedInfo(NCBlocks.infoLine(nc.Global.MOD_ID, "turbine_rotor_blade"), UnitHelper.prefix(turbine_mb_per_blade, 5, "B/t", -1)));
 		
 	}
 
@@ -368,16 +381,7 @@ public class QMDBlocks
 		registerRender(atmosphereCollector);
 		registerRender(liquidCollector);
 		
-		for (int i = 0; i < NeutronReflectorType.values().length; i++)
-		{
-			registerRender(fissionReflector, i, NeutronReflectorType.values()[i].getName());
-		}
-		for (int i = 0; i < NeutronShieldType.values().length; i++)
-		{
-			ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(fissionShield), i, new ModelResourceLocation(new ResourceLocation(QMD.MOD_ID, fissionShield.getRegistryName().getPath()), "active=true,type=" + NeutronShieldType.values()[i].getName()));
-		}
 		
-		registerRender(rtgStrontium);
 		
 		for (int i = 0; i < LampType.values().length; i++)
 		{
@@ -419,6 +423,14 @@ public class QMDBlocks
 		}
 		registerRender(liquefierPort);
 		registerRender(liquefierEnergyPort);
+		registerRender(liquefierCasing);
+		registerRender(liquefierGlass);
+		registerRender(liquefierBaffle);
+		registerRender(liquefierInlet);
+		registerRender(liquefierOutlet);
+		registerRender(liquefierTubeCopper);
+		registerRender(liquefierTubeHardCarbon);
+		registerRender(liquefierTubeThermoconducting);
 		
 		registerRender(strontium90);
 		registerRender(greenLuminousPaint);
@@ -426,7 +438,6 @@ public class QMDBlocks
 		registerRender(orangeLuminousPaint);
 		registerRender(creativeParticleSource);
 		
-		registerRender(turbineBladeSuperAlloy);
 	}
 
 	

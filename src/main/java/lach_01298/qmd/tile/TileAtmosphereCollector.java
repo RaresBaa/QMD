@@ -2,7 +2,7 @@ package lach_01298.qmd.tile;
 
 import lach_01298.qmd.config.QMDConfig;
 import lach_01298.qmd.recipes.AtmosphereCollectorRecipes;
-import nc.util.MaterialHelper;
+import lach_01298.qmd.nco.util.MaterialHelper;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockPos.MutableBlockPos;

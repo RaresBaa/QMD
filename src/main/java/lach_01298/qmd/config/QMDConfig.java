@@ -2,7 +2,7 @@ package lach_01298.qmd.config;
 
 import lach_01298.qmd.QMD;
 import lach_01298.qmd.QMDRadSources;
-import nc.util.Lang;
+import lach_01298.qmd.nco.util.Lang;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
@@ -494,7 +494,7 @@ public class QMDConfig {
 		propertyCoperniciumRadiation.setLanguageKey("gui.qmd.config.copernicium_radiation");
 		
 		
-		Property propertyOverrideNCRecipes = config.get(CATEGORY_RECIPES, "override_nc_recipes", true, Lang.localize("gui.qmd.config.recipes.override_nc_recipes.comment"));
+		Property propertyOverrideNCRecipes = config.get(CATEGORY_RECIPES, "override_nc_recipes", false, Lang.localize("gui.qmd.config.recipes.override_nc_recipes.comment"));
 		propertyOverrideNCRecipes.setLanguageKey("gui.qmd.config.recipes.override_nc_recipes");
 		
 		Property propertyRSFTargetChamber = config.get(CATEGORY_RECIPES, "rsf_target_chamber", 100, Lang.localize("gui.qmd.config.recipes.rsf_target_chamber.comment"), 1, Integer.MAX_VALUE);

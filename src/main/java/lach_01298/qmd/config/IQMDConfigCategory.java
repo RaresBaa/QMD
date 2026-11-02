@@ -1,6 +1,6 @@
 package lach_01298.qmd.config;
 
-import nc.util.Lang;
+import lach_01298.qmd.nco.util.Lang;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.*;
 import net.minecraftforge.fml.client.config.*;

@@ -2,7 +2,7 @@ package lach_01298.qmd.container.slot;
 
 import lach_01298.qmd.item.IItemParticleAmount;
 import lach_01298.qmd.recipe.QMDRecipeHandler;
-import nc.tile.inventory.ITileInventory;
+import lach_01298.qmd.nco.tile.inventory.ITileInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 

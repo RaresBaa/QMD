@@ -1,6 +1,6 @@
 package lach_01298.qmd.network;
 
-import nc.network.NCPacket;
+import lach_01298.qmd.nco.network.NCPacket;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 
 public abstract class QMDPacket extends NCPacket {

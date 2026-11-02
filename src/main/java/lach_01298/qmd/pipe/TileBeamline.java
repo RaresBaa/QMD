@@ -1,6 +1,6 @@
 package lach_01298.qmd.pipe;
 
-import static nc.block.property.BlockProperties.AXIS_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.AXIS_ALL;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import lach_01298.qmd.capabilities.CapabilityParticleStackHandler;
 import lach_01298.qmd.particle.ITileParticleStorage;
 import lach_01298.qmd.particle.ParticleStorage;
 import lach_01298.qmd.particle.ParticleStorageBeamline;
-import nc.handler.TileInfoHandler;
-import nc.tile.TileContainerInfo;
+import lach_01298.qmd.nco.handler.TileInfoHandler;
+import lach_01298.qmd.nco.tile.TileContainerInfo;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;

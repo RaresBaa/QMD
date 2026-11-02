@@ -1,7 +1,7 @@
 package lach_01298.qmd.vacuumChamber.tile;
 
 import lach_01298.qmd.vacuumChamber.VacuumChamber;
-import nc.multiblock.cuboidal.*;
+import lach_01298.qmd.nco.multiblock.cuboidal.*;
 
 public abstract class TileVacuumChamberPart extends TileCuboidalMultiblockPart<VacuumChamber, IVacuumChamberPart> implements IVacuumChamberPart
 {

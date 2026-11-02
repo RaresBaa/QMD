@@ -2,7 +2,7 @@ package lach_01298.qmd.block;
 
 import lach_01298.qmd.enums.BlockTypes.LampType;
 import lach_01298.qmd.tab.QMDTabs;
-import nc.block.BlockMeta;
+import lach_01298.qmd.nco.block.BlockMeta;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyEnum;
@@ -14,7 +14,7 @@ import net.minecraft.world.*;
 
 import java.util.Random;
 
-import static nc.block.property.BlockProperties.ACTIVE;
+import static lach_01298.qmd.nco.block.property.BlockProperties.ACTIVE;
 
 public class BlockLamp extends BlockMeta
 {

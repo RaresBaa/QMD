@@ -8,10 +8,10 @@ import it.unimi.dsi.fastutil.objects.ObjectIterator;
 import it.unimi.dsi.fastutil.objects.ObjectSet;
 import lach_01298.qmd.particle.*;
 import lach_01298.qmd.recipe.ingredient.*;
-import nc.recipe.*;
-import nc.recipe.ingredient.*;
-import nc.tile.internal.fluid.Tank;
-import nc.util.*;
+import lach_01298.qmd.nco.recipe.*;
+import lach_01298.qmd.nco.recipe.ingredient.*;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.util.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraftforge.fluids.*;
@@ -22,7 +22,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.*;
 
-import static nc.util.PermutationHelper.permutations;
+import static lach_01298.qmd.nco.util.PermutationHelper.permutations;
 
 @ZenClass("mods.qmd.AbstractQMDRecipeHandler")
 @ZenRegister

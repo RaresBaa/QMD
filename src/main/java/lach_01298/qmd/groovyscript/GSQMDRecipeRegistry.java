@@ -12,9 +12,9 @@
 //import lach_01298.qmd.recipe.ingredient.IParticleIngredient;
 //import lach_01298.qmd.recipes.QMDRecipes;
 //import nc.integration.groovyscript.GSHelper;
-//import nc.recipe.ingredient.IFluidIngredient;
-//import nc.recipe.ingredient.IItemIngredient;
-//import nc.util.*;
+//import lach_01298.qmd.nco.recipe.ingredient.IFluidIngredient;
+//import lach_01298.qmd.nco.recipe.ingredient.IItemIngredient;
+//import lach_01298.qmd.nco.util.*;
 //
 //import javax.annotation.Nullable;
 //import java.util.*;

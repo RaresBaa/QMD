@@ -1,7 +1,7 @@
 package lach_01298.qmd.particleChamber.tile;
 
 import lach_01298.qmd.particleChamber.ParticleChamber;
-import nc.multiblock.cuboidal.*;
+import lach_01298.qmd.nco.multiblock.cuboidal.*;
 
 public abstract class TileParticleChamberPart extends TileCuboidalMultiblockPart<ParticleChamber, IParticleChamberPart> implements IParticleChamberPart
 {

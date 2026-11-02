@@ -11,10 +11,10 @@ import lach_01298.qmd.recipe.*;
 import lach_01298.qmd.recipe.ingredient.IParticleIngredient;
 import lach_01298.qmd.util.Util;
 import lach_01298.qmd.vacuumChamber.tile.*;
-import nc.recipe.ingredient.*;
-import nc.tile.internal.fluid.Tank;
-import nc.tile.internal.fluid.Tank.TankInfo;
-import nc.tile.multiblock.TilePartAbstract.SyncReason;
+import lach_01298.qmd.nco.recipe.ingredient.*;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank.TankInfo;
+import lach_01298.qmd.nco.tile.multiblock.TilePartAbstract.SyncReason;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -27,7 +27,7 @@ import javax.annotation.Nonnull;
 import java.util.*;
 
 import static lach_01298.qmd.recipes.QMDRecipes.*;
-import static nc.block.property.BlockProperties.ACTIVE;
+import static lach_01298.qmd.nco.block.property.BlockProperties.ACTIVE;
 
 public class ExoticContainmentLogic extends VacuumChamberLogic
 {

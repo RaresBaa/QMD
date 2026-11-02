@@ -3,8 +3,8 @@ package lach_01298.qmd.pipe;
 import io.netty.buffer.ByteBuf;
 import lach_01298.qmd.particle.ParticleStorageAccelerator;
 import lach_01298.qmd.util.ByteUtil;
-import nc.network.multiblock.MultiblockUpdatePacket;
-import nc.tile.TileContainerInfo;
+import lach_01298.qmd.nco.network.multiblock.MultiblockUpdatePacket;
+import lach_01298.qmd.nco.tile.TileContainerInfo;
 
 public class PipeBeamlineUpdatePacket extends PipeUpdatePacket
 {

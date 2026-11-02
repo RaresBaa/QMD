@@ -9,10 +9,10 @@ import lach_01298.qmd.particleChamber.tile.*;
 import lach_01298.qmd.pipe.TileBeamline;
 import lach_01298.qmd.vacuumChamber.tile.*;
 import nc.ModCheck;
-import nc.gui.GuiFunction;
-import nc.tile.TileContainerInfo;
+import lach_01298.qmd.nco.gui.GuiFunction;
+import lach_01298.qmd.nco.tile.TileContainerInfo;
 
-import static nc.handler.TileInfoHandler.*;
+import static lach_01298.qmd.nco.handler.TileInfoHandler.*;
 
 public class QMDTileInfoHandler {
 	

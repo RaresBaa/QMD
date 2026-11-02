@@ -1,6 +1,6 @@
 {
 	"name": "QMD Multiblocks",
 	"description": "What you need to know to build CERN",
-	"icon": "nuclearcraft:multitool",
+	"icon": "qmd:multitool",
 	"sortnum": 4
 }

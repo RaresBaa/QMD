@@ -3,11 +3,11 @@ package lach_01298.qmd.vacuumChamber.tile;
 import com.google.common.collect.Lists;
 import lach_01298.qmd.vacuumChamber.VacuumChamber;
 import lach_01298.qmd.vacuumChamber.block.BlockVacuumChamberVent;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
-import nc.tile.fluid.ITileFluid;
-import nc.tile.internal.fluid.*;
-import nc.tile.passive.ITilePassive;
-import nc.util.Lang;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.tile.fluid.ITileFluid;
+import lach_01298.qmd.nco.tile.internal.fluid.*;
+import lach_01298.qmd.nco.tile.passive.ITilePassive;
+import lach_01298.qmd.nco.util.Lang;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.*;
 import net.minecraft.item.ItemStack;
@@ -23,7 +23,7 @@ import net.minecraftforge.fluids.capability.*;
 import javax.annotation.*;
 import java.util.*;
 
-import static nc.block.property.BlockProperties.FACING_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FACING_ALL;
 
 public class TileVacuumChamberVent extends TileVacuumChamberPart implements ITileFluid, ITickable
 {

@@ -1,7 +1,7 @@
 package lach_01298.qmd.fluid;
 
 import lach_01298.qmd.QMDDamageSources;
-import nc.block.fluid.NCBlockFluid;
+import lach_01298.qmd.nco.block.fluid.NCBlockFluid;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;

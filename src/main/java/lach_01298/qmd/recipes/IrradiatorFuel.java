@@ -3,7 +3,7 @@ package lach_01298.qmd.recipes;
 import lach_01298.qmd.enums.MaterialTypes.SourceType;
 import lach_01298.qmd.item.QMDItems;
 import lach_01298.qmd.recipe.QMDRecipeHandler;
-import nc.recipe.BasicRecipeHandler;
+import lach_01298.qmd.nco.recipe.BasicRecipeHandler;
 import net.minecraft.item.ItemStack;
 
 import java.util.ArrayList;
@@ -21,6 +21,8 @@ public class IrradiatorFuel extends QMDRecipeHandler
 	public void addRecipes()
 	{
 		addRecipe(new ItemStack(QMDItems.source,1, SourceType.COBALT_60.getID()), 1D);
+		// Lets a player without an accelerator make their first Co-60, which NCO does in its fission irradiator
+		addRecipe(new ItemStack(QMDItems.source,1, SourceType.PLUTONIUM_BERYLLIUM.getID()), 1D);
 		addRecipe(new ItemStack(QMDItems.source,1, SourceType.IRIDIUM_192.getID()), 10D);
 		
 	}

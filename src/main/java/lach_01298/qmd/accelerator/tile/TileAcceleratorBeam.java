@@ -1,7 +1,7 @@
 package lach_01298.qmd.accelerator.tile;
 
 import lach_01298.qmd.accelerator.Accelerator;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
 import net.minecraft.nbt.NBTTagCompound;
 
 public class TileAcceleratorBeam extends TileAcceleratorPart implements IAcceleratorComponent

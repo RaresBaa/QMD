@@ -9,7 +9,7 @@ import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import static nc.block.property.BlockProperties.FRAME;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FRAME;
 
 public class BlockVacuumChamberCasing extends BlockVacuumChamberPart
 {

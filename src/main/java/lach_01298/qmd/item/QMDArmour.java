@@ -3,7 +3,7 @@ package lach_01298.qmd.item;
 import lach_01298.qmd.QMD;
 import lach_01298.qmd.config.QMDConfig;
 import lach_01298.qmd.tab.QMDTabs;
-import nc.item.IInfoItem;
+import lach_01298.qmd.nco.item.IInfoItem;
 import nc.radiation.RadArmor;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.util.RecipeItemHelper;

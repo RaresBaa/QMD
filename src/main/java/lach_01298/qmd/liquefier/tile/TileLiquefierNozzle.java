@@ -1,9 +1,9 @@
 package lach_01298.qmd.liquefier.tile;
 
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
-import nc.multiblock.hx.HeatExchanger;
-import nc.multiblock.hx.HeatExchangerTubeNetwork;
-import nc.tile.hx.TileHeatExchangerPart;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.multiblock.hx.HeatExchanger;
+import lach_01298.qmd.nco.multiblock.hx.HeatExchangerTubeNetwork;
+import lach_01298.qmd.nco.tile.hx.TileHeatExchangerPart;
 
 import javax.annotation.Nullable;
 

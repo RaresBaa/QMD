@@ -1,7 +1,7 @@
 package lach_01298.qmd.enums;
 
 import lach_01298.qmd.QMDConstants;
-import nc.enumm.*;
+import lach_01298.qmd.nco.enumm.*;
 import net.minecraft.util.IStringSerializable;
 
 import static lach_01298.qmd.config.QMDConfig.*;
@@ -66,11 +66,26 @@ public class MaterialTypes
 	{
 		YTTRIUM("yttrium", 0),
 		NEODYMIUM("neodymium", 1),
-		IODINE("iodine",2),
-		SAMARIUM("samarium",3),
-		TERBIUM("terbium",4),
-		ERBIUM("erbium",5),
-		YTTERBIUM("ytterbium",6);
+		IODINE("iodine", 2),
+		SAMARIUM("samarium", 3),
+		TERBIUM("terbium", 4),
+		ERBIUM("erbium", 5),
+		YTTERBIUM("ytterbium", 6),
+		BISMUTH("bismuth", 7),
+		MOLYBDENUM("molybdenum", 8),
+		PALLADIUM("palladium", 9),
+		POLONIUM("polonium", 10),
+		RADIUM("radium", 11),
+		DYSPROSIUM("dysprosium", 12),
+		GADOLINIUM("gadolinium", 13),
+		HOLMIUM("holmium", 14),
+		RUTHENIUM("ruthenium", 15),
+		RUTHENIUM_106("ruthenium_106", 16),
+		STRONTIUM_90("strontium_90", 17),
+		CAESIUM_137("caesium_137", 18),
+		EUROPIUM_155("europium_155", 19),
+		PROMETHIUM_147("promethium_147", 20),
+		PROTACTINIUM_233("protactinium_233", 21);
 		
 		
 		private String name;
@@ -154,7 +169,12 @@ public class MaterialTypes
 	{
 		YTTRIUM("yttrium", 0),
 		NEODYMIUM("neodymium", 1),
-		MERCURY("mercury", 2);
+		MERCURY("mercury", 2),
+		DYSPROSIUM("dysprosium", 3),
+		GADOLINIUM("gadolinium", 4),
+		HOLMIUM("holmium", 5),
+		PALLADIUM("palladium", 6),
+		SAMARIUM("samarium", 7);
 		
 		private String name;
 		private int id;
@@ -602,7 +622,8 @@ public class MaterialTypes
 		SODIUM_22("sodium_22", 1, 5* QMDConstants.moleAmount),
 		COBALT_60("cobalt_60",2,1 * QMDConstants.moleAmount),
 		IRIDIUM_192("iridium_192", 3, 1 * QMDConstants.moleAmount),
-		CALCIUM_48("calcium_48", 4, 5 * QMDConstants.moleAmount);
+		CALCIUM_48("calcium_48", 4, 5 * QMDConstants.moleAmount),
+		PLUTONIUM_BERYLLIUM("plutonium_beryllium", 5, 1 * QMDConstants.moleAmount);
 		
 		
 		private String name;

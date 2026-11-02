@@ -1,8 +1,8 @@
 package lach_01298.qmd.multiblock;
 
-import nc.multiblock.cuboidal.*;
-import nc.multiblock.internal.BlockFacing;
-import nc.tile.multiblock.*;
+import lach_01298.qmd.nco.multiblock.cuboidal.*;
+import lach_01298.qmd.nco.multiblock.internal.BlockFacing;
+import lach_01298.qmd.nco.tile.multiblock.*;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 

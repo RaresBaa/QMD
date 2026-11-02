@@ -1,10 +1,10 @@
 package lach_01298.qmd.fluid;
 
 import lach_01298.qmd.QMD;
-import nc.block.fluid.NCBlockFluid;
-import nc.block.item.NCItemBlock;
-import nc.enumm.FluidType;
-import nc.util.*;
+import lach_01298.qmd.nco.block.fluid.NCBlockFluid;
+import lach_01298.qmd.nco.block.item.NCItemBlock;
+import lach_01298.qmd.nco.enumm.FluidType;
+import lach_01298.qmd.nco.util.*;
 import net.minecraft.block.Block;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.TextFormatting;
@@ -56,6 +56,22 @@ public class QMDFluids
 			addFluidPair(FluidType.GAS, "nitric_oxide", 0xc9eeff);
 			addFluidPair(FluidType.GAS, "nitrogen_dioxide", 0x782a10);
 			addFluidPair(FluidType.GAS, "compressed_air", 0xBDF0FF);
+			
+			// Fission products that only NCO registers
+			addFluidPair(FluidType.MOLTEN, "barium", 0xE8E8D5);
+			addFluidPair(FluidType.MOLTEN, "dysprosium", 0x9FB0A6);
+			addFluidPair(FluidType.MOLTEN, "gadolinium", 0xB9BCC4);
+			addFluidPair(FluidType.MOLTEN, "holmium", 0xC9B58F);
+			addFluidPair(FluidType.MOLTEN, "palladium", 0xD8D8CE);
+			addFluidPair(FluidType.MOLTEN, "terbium", 0x5BA694);
+			addFluidPair(FluidType.MOLTEN, "lead", 0x8A8AA0);
+			addFluidPair(FluidType.MOLTEN, "zirconium", 0xC5C5A0);
+			addFluidPair(FluidType.MOLTEN, "strontium_90", 0xB8BE88);
+			addFluidPair(FluidType.MOLTEN, "molybdenum", 0xBCC5E4);
+			addFluidPair(FluidType.MOLTEN, "ruthenium_106", 0xA3A3A3);
+			addFluidPair(FluidType.MOLTEN, "caesium_137", 0xADADAD);
+			addFluidPair(FluidType.MOLTEN, "promethium_147", 0x96C199);
+			addFluidPair(FluidType.MOLTEN, "europium_155", 0x74664A);
 			
 			//molten
 			addFluidPair(FluidType.MOLTEN, "silicon", 0x676767);

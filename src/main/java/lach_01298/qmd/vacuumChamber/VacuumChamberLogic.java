@@ -9,11 +9,11 @@ import lach_01298.qmd.multiblock.network.*;
 import lach_01298.qmd.particle.IParticleStackHandler;
 import lach_01298.qmd.particle.ParticleStack;
 import lach_01298.qmd.vacuumChamber.tile.*;
-import nc.multiblock.*;
-import nc.recipe.ingredient.IFluidIngredient;
-import nc.tile.internal.fluid.Tank;
-import nc.tile.multiblock.TilePartAbstract.SyncReason;
-import nc.util.MaterialHelper;
+import lach_01298.qmd.nco.multiblock.*;
+import lach_01298.qmd.nco.recipe.ingredient.IFluidIngredient;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.tile.multiblock.TilePartAbstract.SyncReason;
+import lach_01298.qmd.nco.util.MaterialHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -26,7 +26,7 @@ import javax.annotation.Nonnull;
 import java.util.*;
 
 import static lach_01298.qmd.recipes.QMDRecipes.accelerator_cooling;
-import static nc.block.property.BlockProperties.ACTIVE;
+import static lach_01298.qmd.nco.block.property.BlockProperties.ACTIVE;
 
 public class VacuumChamberLogic extends MultiblockLogic<VacuumChamber, VacuumChamberLogic,IVacuumChamberPart>
 		implements IPacketMultiblockLogic<VacuumChamber, VacuumChamberLogic,IVacuumChamberPart,VacuumChamberUpdatePacket>

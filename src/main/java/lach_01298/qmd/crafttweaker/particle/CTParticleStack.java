@@ -4,7 +4,7 @@ import crafttweaker.api.item.*;
 import crafttweaker.api.liquid.ILiquidStack;
 import crafttweaker.api.player.IPlayer;
 import lach_01298.qmd.particle.ParticleStack;
-import nc.util.Lang;
+import lach_01298.qmd.nco.util.Lang;
 
 import java.util.List;
 

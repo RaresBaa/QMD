@@ -10,23 +10,6 @@
         },
         {
             "type": "spotlight",
-            "item": "qmd:rtg_strontium",
-            "text": "A radioisotope thermoelectric generator that uses Strontium 90 a common nuclear waste."
-        },
-        {
-            "type": "spotlight",
-			"title": "Super Alloy Turbine Blade",
-            "item": "qmd:turbine_blade_super_alloy",
-            "text": "A turbine blade made of super alloy for high efficiencies."
-        },
-        {
-            "type": "spotlight",
-			"title": "Hf-Er Neutron Shield",
-            "item": "qmd:fission_shield",
-            "text": "A fission shield for reactors made of hafnium and erbium for higher efficiencies."
-        },
-        {
-            "type": "spotlight",
             "item": "qmd:discharge_lamp",
             "title": "Discharge Lamps",
             "text": "A decorative light that can be turned off with redstone. They come in different colors depending on the element inside."

@@ -6,7 +6,7 @@
     "pages": [
         {
 			"type": "text",
-            "text": "At the core of QMD are Accelerator Multiblocks. There are many different types: $(l:multiblocks/accelerators/linear_accelerator)Linear$(/l), $(l:multiblocks/accelerators/ring_accelerator)Synchrotron$(/l),  $(l:multiblocks/accelerators/decelerator)Decelerator$(/l), $(l:multiblocks/accelerators/Beam_diverter)Beam Diverter$(/l), $(l:multiblocks/accelerators/beam_splitter)Beam Splitter$(/l) and $(l:multiblocks/accelerators/mass_spectrometer)Mass Spectrometer$(/l). All these do different things but use the same basic principles and materials. Here we go into the basic principles."
+            "text": "At the core of QMD are Accelerator Multiblocks. There are many different types: $(l:multiblocks/accelerators/linear_accelerator)Linear$(/l), $(l:multiblocks/accelerators/ring_accelerator)Synchrotron$(/l),  $(l:multiblocks/accelerators/decelerator)Decelerator$(/l), $(l:multiblocks/accelerators/beam_diverter)Beam Diverter$(/l), $(l:multiblocks/accelerators/beam_splitter)Beam Splitter$(/l) and $(l:multiblocks/accelerators/mass_spectrometer)Mass Spectrometer$(/l). All these do different things but use the same basic principles and materials. Here we go into the basic principles."
         },
 		{
             "type": "diagram_high",
@@ -21,7 +21,7 @@
         },
 		{
             "type": "text",
-            "text": "For example, Liquid Helium is 4 Kelvin (K), Liquid Nitrogen is 70 K. The valid coolants and their temperatures can be seen in JEI. $(br)To pipe coolant in and out of an accelerator you need at least 2 Accelerator Coolant Vents, one in input mode and one in output mode. The mode can be switched using the Nuclearcraft multitool. $(br2)Most accelerators need coolants that can either be created in a $(l:multiblocks/other_multiblocks/liquefier)liquefier$(/l) or a supercooler."
+            "text": "For example, Liquid Helium is 4 Kelvin (K), Liquid Nitrogen is 70 K. The valid coolants and their temperatures can be seen in JEI. $(br)To pipe coolant in and out of an accelerator you need at least 2 Accelerator Coolant Vents, one in input mode and one in output mode. The mode can be switched using the multitool. $(br2)Most accelerators need coolants that can either be created in a $(l:multiblocks/other_multiblocks/liquefier)liquefier$(/l) or a supercooler."
         },
         {
 			"anchor": "construction",
@@ -79,7 +79,7 @@
 		{
             "type": "diagram_low",
             "image": "qmd:textures/gui/book_images/beam_diverter2.png",
-            "text": "Dipoles can also be oriented vertically in $(l:multiblocks/accelerators/Beam_diverter)Beam Diverters$(/l) and $(l:multiblocks/accelerators/beam_splitter)Beam Splitters$(/l) to allow the particles to be in and outputted up and down. Example below is 2 beam diverters with vertical dipoles."
+            "text": "Dipoles can also be oriented vertically in $(l:multiblocks/accelerators/beam_diverter)Beam Diverters$(/l) and $(l:multiblocks/accelerators/beam_splitter)Beam Splitters$(/l) to allow the particles to be in and outputted up and down. Example below is 2 beam diverters with vertical dipoles."
         },        
         {
             "type": "text",

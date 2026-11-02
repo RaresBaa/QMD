@@ -2,9 +2,9 @@ package lach_01298.qmd.render.tile;
 
 import lach_01298.qmd.liquefier.LiquefierLogic;
 import lach_01298.qmd.liquefier.tile.TileLiquefierController;
-import nc.multiblock.hx.HeatExchanger;
-import nc.render.IWorldRender;
-import nc.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.multiblock.hx.HeatExchanger;
+import lach_01298.qmd.nco.render.IWorldRender;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;

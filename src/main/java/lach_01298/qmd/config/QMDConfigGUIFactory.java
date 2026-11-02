@@ -1,7 +1,7 @@
 package lach_01298.qmd.config;
 
 import lach_01298.qmd.QMD;
-import nc.util.Lang;
+import lach_01298.qmd.nco.util.Lang;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.fml.client.IModGuiFactory;

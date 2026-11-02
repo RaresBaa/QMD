@@ -29,6 +29,12 @@ public class CommonProxy
 	
 	public void preInit(FMLPreInitializationEvent preEvent)
 	{
+		// Plain NC doesn't start the bundled NCO framework, so QMD has to
+		MinecraftForge.EVENT_BUS.register(new lach_01298.qmd.nco.multiblock.MultiblockHandler());
+		lach_01298.qmd.nco.multiblock.MultiblockHandler.init();
+		lach_01298.qmd.nco.multiblock.MultiblockLogic.init();
+		lach_01298.qmd.nco.network.NCPackets.registerMessages("qmd_nco");
+		
 		QMDTileInfoHandler.preInit();
 		
 		QMDSounds.init();
@@ -58,6 +64,7 @@ public class CommonProxy
 	
 	public void init(FMLInitializationEvent event)
 	{
+		lach_01298.qmd.nco.item.ItemMultitool.registerRightClickLogic();
 		QMDRecipes.init();
 		QMDRadSources.init();
 		QMDEntities.register();

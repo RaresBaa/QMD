@@ -9,7 +9,8 @@ import lach_01298.qmd.particleChamber.tile.*;
 import lach_01298.qmd.pipe.*;
 import lach_01298.qmd.vacuumChamber.*;
 import lach_01298.qmd.vacuumChamber.tile.*;
-import nc.multiblock.hx.HeatExchanger;
+import lach_01298.qmd.nco.multiblock.hx.HeatExchanger;
+import lach_01298.qmd.nco.tile.hx.*;
 
 
 public class Multiblocks
@@ -60,6 +61,11 @@ public class Multiblocks
 		VacuumChamber.PART_CLASSES.add(TileVacuumChamberRedstonePort.class);
 		VacuumChamber.PART_CLASSES.add(IVacuumChamberComponent.class);
 
+		HeatExchanger.PART_CLASSES.add(IHeatExchangerController.class);
+		HeatExchanger.PART_CLASSES.add(TileHeatExchangerInlet.class);
+		HeatExchanger.PART_CLASSES.add(TileHeatExchangerOutlet.class);
+		HeatExchanger.PART_CLASSES.add(TileHeatExchangerTube.class);
+		HeatExchanger.PART_CLASSES.add(TileHeatExchangerBaffle.class);
 		HeatExchanger.PART_CLASSES.add(TileLiquefierCompressor.class);
 		HeatExchanger.PART_CLASSES.add(TileLiquefierNozzle.class);
 		HeatExchanger.PART_CLASSES.add(TileLiquefierFluidPort.class);

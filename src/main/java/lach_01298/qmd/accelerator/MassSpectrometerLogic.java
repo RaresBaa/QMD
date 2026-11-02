@@ -11,10 +11,10 @@ import lach_01298.qmd.particle.ParticleStack;
 import lach_01298.qmd.recipe.QMDRecipe;
 import lach_01298.qmd.recipe.QMDRecipeInfo;
 import lach_01298.qmd.recipes.QMDRecipes;
-import nc.recipe.ingredient.IFluidIngredient;
-import nc.recipe.ingredient.IItemIngredient;
-import nc.tile.internal.fluid.Tank;
-import nc.tile.multiblock.TilePartAbstract.SyncReason;
+import lach_01298.qmd.nco.recipe.ingredient.IFluidIngredient;
+import lach_01298.qmd.nco.recipe.ingredient.IItemIngredient;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.tile.multiblock.TilePartAbstract.SyncReason;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
@@ -28,7 +28,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import java.util.*;
 
 import static lach_01298.qmd.recipes.QMDRecipes.mass_spectrometer;
-import static nc.block.property.BlockProperties.FACING_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FACING_ALL;
 
 public class MassSpectrometerLogic extends AcceleratorLogic
 {

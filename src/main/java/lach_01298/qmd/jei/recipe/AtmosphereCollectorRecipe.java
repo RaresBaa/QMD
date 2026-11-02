@@ -4,7 +4,7 @@ import lach_01298.qmd.recipe.ingredient.WorldIngredient;
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.ingredients.VanillaTypes;
 import mezz.jei.api.recipe.IRecipeWrapper;
-import nc.util.Lang;
+import lach_01298.qmd.nco.util.Lang;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.DimensionManager;

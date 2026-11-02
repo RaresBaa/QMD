@@ -3,11 +3,11 @@ package lach_01298.qmd.machine.container;
 
 import lach_01298.qmd.recipe.QMDRecipeHandler;
 import nc.init.NCItems;
-import nc.recipe.BasicRecipeHandler;
-import nclegacy.container.ContainerTileLegacy;
-import nclegacy.tile.IItemFluidProcessorLegacy;
-import nclegacy.tile.ITileGuiLegacy;
-import nclegacy.tile.IUpgradableLegacy;
+import lach_01298.qmd.nco.recipe.BasicRecipeHandler;
+import lach_01298.qmd.nco.legacy.container.ContainerTileLegacy;
+import lach_01298.qmd.nco.legacy.tile.IItemFluidProcessorLegacy;
+import lach_01298.qmd.nco.legacy.tile.ITileGuiLegacy;
+import lach_01298.qmd.nco.legacy.tile.IUpgradableLegacy;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;

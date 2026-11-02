@@ -3,7 +3,7 @@ package lach_01298.qmd.accelerator.tile;
 
 import lach_01298.qmd.accelerator.Accelerator;
 import lach_01298.qmd.multiblock.TileCuboidalOrToroidalMultiblockPart;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
 
 public abstract class TileAcceleratorPart extends TileCuboidalOrToroidalMultiblockPart<Accelerator, IAcceleratorPart> implements IAcceleratorPart
 {

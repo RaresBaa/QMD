@@ -3,7 +3,7 @@ package lach_01298.qmd.accelerator.tile;
 import com.google.common.collect.Lists;
 import lach_01298.qmd.capabilities.CapabilityParticleStackHandler;
 import lach_01298.qmd.particle.*;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
 import net.minecraft.util.EnumFacing;
 import net.minecraftforge.common.capabilities.Capability;
 

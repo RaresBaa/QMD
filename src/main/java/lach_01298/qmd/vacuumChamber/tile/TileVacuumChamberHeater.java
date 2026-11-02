@@ -5,8 +5,8 @@ import it.unimi.dsi.fastutil.objects.ObjectSet;
 import lach_01298.qmd.accelerator.Accelerator;
 import lach_01298.qmd.enums.BlockTypes.HeaterType;
 import lach_01298.qmd.vacuumChamber.*;
-import nc.multiblock.PlacementRule;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.multiblock.PlacementRule;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
 

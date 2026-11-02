@@ -1,5 +1,8 @@
 package lach_01298.qmd.machine.tile;
 
+import lach_01298.qmd.nco.config.NCOConfig;
+import static lach_01298.qmd.nco.config.NCOConfig.*;
+
 import lach_01298.qmd.config.QMDConfig;
 import lach_01298.qmd.gui.GUI_ID;
 import lach_01298.qmd.recipe.QMDRecipe;
@@ -7,7 +10,7 @@ import lach_01298.qmd.recipe.QMDRecipeHandler;
 import lach_01298.qmd.recipes.QMDRecipes;
 import nc.capability.radiation.resistance.IRadiationResistance;
 import nc.config.NCConfig;
-import nc.util.Lazy;
+import lach_01298.qmd.nco.util.Lazy;
 import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.function.BiFunction;
@@ -34,7 +37,7 @@ public class TileQMDProcessors
 			
 			IRadiationResistance resistance = this.getCapability(IRadiationResistance.CAPABILITY_RADIATION_RESISTANCE, null);
 			if (resistance != null) {
-				resistance.setBaseRadResistance(QMDConfig.irradiator_rad_res);
+				resistance.setRadiationResistance(QMDConfig.irradiator_rad_res);
 			}
 		}
 	}
@@ -47,8 +50,8 @@ public class TileQMDProcessors
 		double maxBasePower = 0D;
 		for (QMDRecipe recipe : handler.getRecipeList()) {
 			if (recipe != null) {
-				maxBaseTime = Math.max(maxBaseTime, recipe.getBaseProcessTime(NCConfig.processor_time_multiplier * defaultTime));
-				maxBasePower = Math.max(maxBasePower, recipe.getBaseProcessPower(NCConfig.processor_power_multiplier * defaultPower));
+				maxBaseTime = Math.max(maxBaseTime, recipe.getBaseProcessTime(NCOConfig.processor_time_multiplier * defaultTime));
+				maxBasePower = Math.max(maxBasePower, recipe.getBaseProcessPower(NCOConfig.processor_power_multiplier * defaultPower));
 			}
 		}
 		return Pair.of(maxBaseTime, maxBasePower);

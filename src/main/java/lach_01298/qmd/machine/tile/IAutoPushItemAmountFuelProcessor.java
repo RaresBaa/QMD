@@ -1,8 +1,8 @@
 package lach_01298.qmd.machine.tile;
 
-import nc.tile.inventory.ITileInventory;
-import nc.tile.processor.IProcessor;
-import nclegacy.tile.IItemProcessorLegacy;
+import lach_01298.qmd.nco.tile.inventory.ITileInventory;
+import lach_01298.qmd.nco.tile.processor.IProcessor;
+import lach_01298.qmd.nco.legacy.tile.IItemProcessorLegacy;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;

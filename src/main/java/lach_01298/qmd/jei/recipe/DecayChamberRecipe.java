@@ -4,7 +4,7 @@ import lach_01298.qmd.recipe.QMDRecipe;
 import lach_01298.qmd.recipes.QMDRecipes;
 import lach_01298.qmd.util.Units;
 import mezz.jei.api.IGuiHelper;
-import nc.util.Lang;
+import lach_01298.qmd.nco.util.Lang;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 

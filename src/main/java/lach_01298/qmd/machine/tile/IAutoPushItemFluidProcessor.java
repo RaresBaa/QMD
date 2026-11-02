@@ -1,10 +1,10 @@
 package lach_01298.qmd.machine.tile;
 
-import nc.tile.fluid.ITileFluid;
-import nc.tile.internal.fluid.Tank;
-import nc.tile.inventory.ITileInventory;
-import nc.tile.processor.IProcessor;
-import nclegacy.tile.IItemFluidProcessorLegacy;
+import lach_01298.qmd.nco.tile.fluid.ITileFluid;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.tile.inventory.ITileInventory;
+import lach_01298.qmd.nco.tile.processor.IProcessor;
+import lach_01298.qmd.nco.legacy.tile.IItemFluidProcessorLegacy;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;

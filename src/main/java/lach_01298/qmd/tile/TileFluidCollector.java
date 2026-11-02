@@ -1,7 +1,7 @@
 package lach_01298.qmd.tile;
 
-import nc.tile.internal.energy.EnergyConnection;
-import nclegacy.tile.TileItemFluidGeneratorLegacy;
+import lach_01298.qmd.nco.tile.internal.energy.EnergyConnection;
+import lach_01298.qmd.nco.legacy.tile.TileItemFluidGeneratorLegacy;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidStack;

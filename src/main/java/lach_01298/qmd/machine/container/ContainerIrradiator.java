@@ -4,8 +4,8 @@ import lach_01298.qmd.container.slot.SlotAmountFuel;
 import lach_01298.qmd.container.slot.SlotQMDProcessorInput;
 import lach_01298.qmd.machine.tile.TileItemAmountFuelProcessor;
 import lach_01298.qmd.recipes.QMDRecipes;
-import nc.container.slot.SlotFurnace;
-import nc.container.slot.SlotProcessorInput;
+import lach_01298.qmd.nco.container.slot.SlotFurnace;
+import lach_01298.qmd.nco.container.slot.SlotProcessorInput;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Slot;
 

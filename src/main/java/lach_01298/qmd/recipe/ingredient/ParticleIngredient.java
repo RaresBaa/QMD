@@ -5,7 +5,7 @@ import crafttweaker.api.item.IIngredient;
 import it.unimi.dsi.fastutil.ints.*;
 import lach_01298.qmd.crafttweaker.particle.CTParticleStack;
 import lach_01298.qmd.particle.ParticleStack;
-import nc.recipe.*;
+import lach_01298.qmd.nco.recipe.*;
 import net.minecraftforge.fml.common.Optional;
 
 import java.util.List;

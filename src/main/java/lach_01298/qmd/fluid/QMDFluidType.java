@@ -1,6 +1,6 @@
 package lach_01298.qmd.fluid;
 
-import nc.block.fluid.NCBlockFluid;
+import lach_01298.qmd.nco.block.fluid.NCBlockFluid;
 import net.minecraftforge.fluids.Fluid;
 
 public enum QMDFluidType {

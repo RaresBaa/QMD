@@ -16,7 +16,7 @@
                     "layer0": "qmd:items/materials/dust/neodymium"
                 }
             },
-             "iodine": {
+            "iodine": {
                 "textures": {
                     "layer0": "qmd:items/materials/dust/iodine"
                 }
@@ -39,6 +39,81 @@
             "ytterbium": {
                 "textures": {
                     "layer0": "qmd:items/materials/dust/ytterbium"
+                }
+            },
+            "bismuth": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/bismuth"
+                }
+            },
+            "molybdenum": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/molybdenum"
+                }
+            },
+            "palladium": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/palladium"
+                }
+            },
+            "polonium": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/polonium"
+                }
+            },
+            "radium": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/radium"
+                }
+            },
+            "dysprosium": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/dysprosium"
+                }
+            },
+            "gadolinium": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/gadolinium"
+                }
+            },
+            "holmium": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/holmium"
+                }
+            },
+            "ruthenium": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/ruthenium"
+                }
+            },
+            "ruthenium_106": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/ruthenium_106"
+                }
+            },
+            "strontium_90": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/strontium_90"
+                }
+            },
+            "caesium_137": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/caesium_137"
+                }
+            },
+            "europium_155": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/europium_155"
+                }
+            },
+            "promethium_147": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/promethium_147"
+                }
+            },
+            "protactinium_233": {
+                "textures": {
+                    "layer0": "qmd:items/materials/dust/protactinium_233"
                 }
             }
         }

@@ -6,13 +6,13 @@ import lach_01298.qmd.QMD;
 import lach_01298.qmd.accelerator.Accelerator;
 import lach_01298.qmd.recipe.QMDRecipeHandler;
 import lach_01298.qmd.recipes.QMDRecipes;
-import nc.handler.TileInfoHandler;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
-import nc.recipe.BasicRecipeHandler;
-import nc.tile.TileContainerInfo;
-import nc.tile.internal.inventory.*;
-import nc.tile.inventory.ITileInventory;
-import nc.util.NBTHelper;
+import lach_01298.qmd.nco.handler.TileInfoHandler;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.recipe.BasicRecipeHandler;
+import lach_01298.qmd.nco.tile.TileContainerInfo;
+import lach_01298.qmd.nco.tile.internal.inventory.*;
+import lach_01298.qmd.nco.tile.inventory.ITileInventory;
+import lach_01298.qmd.nco.util.NBTHelper;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -26,7 +26,7 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import javax.annotation.*;
 import java.util.Set;
 
-import static nc.block.property.BlockProperties.FACING_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FACING_ALL;
 
 public class TileMassSpectrometerController extends TileAcceleratorPart implements IAcceleratorController<TileMassSpectrometerController>, ITileInventory
 {

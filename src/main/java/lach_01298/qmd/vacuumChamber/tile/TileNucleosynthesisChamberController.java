@@ -2,12 +2,12 @@ package lach_01298.qmd.vacuumChamber.tile;
 
 import lach_01298.qmd.accelerator.tile.TileAcceleratorCooler;
 import lach_01298.qmd.vacuumChamber.VacuumChamber;
-import nc.handler.TileInfoHandler;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
-import nc.render.BlockHighlightTracker;
-import nc.tile.TileContainerInfo;
-import nc.util.Lang;
-import nc.util.NCMath;
+import lach_01298.qmd.nco.handler.TileInfoHandler;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.render.BlockHighlightTracker;
+import lach_01298.qmd.nco.tile.TileContainerInfo;
+import lach_01298.qmd.nco.util.Lang;
+import lach_01298.qmd.nco.util.NCMath;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -19,7 +19,7 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.*;
 
-import static nc.block.property.BlockProperties.FACING_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FACING_ALL;
 
 public class TileNucleosynthesisChamberController extends TileVacuumChamberPart implements IVacuumChamberController<TileNucleosynthesisChamberController>
 {

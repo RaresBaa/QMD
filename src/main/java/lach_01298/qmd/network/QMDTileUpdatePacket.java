@@ -1,8 +1,8 @@
 package lach_01298.qmd.network;
 
 import io.netty.buffer.ByteBuf;
-import nc.network.tile.TileUpdatePacket;
-import nc.tile.ITilePacket;
+import lach_01298.qmd.nco.network.tile.TileUpdatePacket;
+import lach_01298.qmd.nco.tile.ITilePacket;
 import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 

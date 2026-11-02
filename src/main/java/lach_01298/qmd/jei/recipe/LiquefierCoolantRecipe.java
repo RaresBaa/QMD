@@ -3,9 +3,9 @@ package lach_01298.qmd.jei.recipe;
 import lach_01298.qmd.QMD;
 import lach_01298.qmd.recipes.QMDRecipes;
 import mezz.jei.api.IGuiHelper;
-import nc.integration.jei.wrapper.JEIRecipeWrapper;
-import nc.recipe.BasicRecipe;
-import nc.util.Lang;
+import lach_01298.qmd.nco.integration.jei.wrapper.JEIRecipeWrapper;
+import lach_01298.qmd.nco.recipe.BasicRecipe;
+import lach_01298.qmd.nco.util.Lang;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.text.TextFormatting;
 

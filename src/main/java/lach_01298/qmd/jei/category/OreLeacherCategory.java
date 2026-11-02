@@ -5,8 +5,8 @@ import lach_01298.qmd.jei.recipe.OreLeacherRecipe;
 import mezz.jei.api.IGuiHelper;
 import mezz.jei.api.gui.IRecipeLayout;
 import mezz.jei.api.ingredients.IIngredients;
-import nc.integration.jei.JEIHelper.*;
-import nc.recipe.IngredientSorption;
+import lach_01298.qmd.nco.integration.jei.JEIHelper.*;
+import lach_01298.qmd.nco.recipe.IngredientSorption;
 import net.minecraft.item.ItemStack;
 
 public class OreLeacherCategory extends QMDProcessorCategory<OreLeacherRecipe>

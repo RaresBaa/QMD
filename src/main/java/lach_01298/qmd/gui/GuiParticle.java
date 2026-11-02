@@ -2,7 +2,7 @@ package lach_01298.qmd.gui;
 
 import lach_01298.qmd.particle.ParticleStack;
 import lach_01298.qmd.util.Units;
-import nc.util.Lang;
+import lach_01298.qmd.nco.util.Lang;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.util.text.TextFormatting;

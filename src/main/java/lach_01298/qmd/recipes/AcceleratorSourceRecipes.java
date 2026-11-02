@@ -5,9 +5,9 @@ import lach_01298.qmd.enums.MaterialTypes.*;
 import lach_01298.qmd.item.QMDItems;
 import lach_01298.qmd.particle.*;
 import lach_01298.qmd.recipe.QMDRecipeHandler;
-import nc.recipe.BasicRecipeHandler;
-import nc.recipe.ingredient.*;
-import nc.util.FluidStackHelper;
+import lach_01298.qmd.nco.recipe.BasicRecipeHandler;
+import lach_01298.qmd.nco.recipe.ingredient.*;
+import lach_01298.qmd.nco.util.FluidStackHelper;
 import net.minecraft.item.ItemStack;
 
 import java.util.List;

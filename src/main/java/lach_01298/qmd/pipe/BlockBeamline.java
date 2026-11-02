@@ -1,7 +1,7 @@
 package lach_01298.qmd.pipe;
 
 import lach_01298.qmd.tab.QMDTabs;
-import nc.block.NCBlock;
+import lach_01298.qmd.nco.block.NCBlock;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.*;
@@ -16,7 +16,7 @@ import net.minecraftforge.fml.relauncher.*;
 import javax.annotation.Nullable;
 import java.util.List;
 
-import static nc.block.property.BlockProperties.AXIS_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.AXIS_ALL;
 
 public class BlockBeamline extends NCBlock implements ITileEntityProvider
 {

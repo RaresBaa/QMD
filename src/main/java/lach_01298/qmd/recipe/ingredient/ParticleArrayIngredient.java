@@ -4,7 +4,7 @@ import com.google.common.collect.Lists;
 import crafttweaker.api.item.*;
 import it.unimi.dsi.fastutil.ints.*;
 import lach_01298.qmd.particle.ParticleStack;
-import nc.recipe.*;
+import lach_01298.qmd.nco.recipe.*;
 import net.minecraftforge.fml.common.Optional;
 
 import java.util.*;
@@ -129,7 +129,7 @@ public class ParticleArrayIngredient implements IParticleIngredient
 	@Override
 	public boolean isEmpty() {
 
-		return this.ingredientList.stream().allMatch(nc.recipe.ingredient.IIngredient::isEmpty);
+		return this.ingredientList.stream().allMatch(lach_01298.qmd.nco.recipe.ingredient.IIngredient::isEmpty);
 	}
 
 	@Override

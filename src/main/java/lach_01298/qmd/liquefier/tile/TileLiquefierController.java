@@ -1,13 +1,13 @@
 package lach_01298.qmd.liquefier.tile;
 
-import nc.handler.TileInfoHandler;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
-import nc.multiblock.hx.HeatExchanger;
-import nc.multiblock.hx.HeatExchangerLogic;
-import nc.tile.TileContainerInfo;
-import nc.tile.hx.IHeatExchangerController;
-import nc.tile.hx.TileHeatExchangerPart;
-import nc.util.NCMath;
+import lach_01298.qmd.nco.handler.TileInfoHandler;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.multiblock.hx.HeatExchanger;
+import lach_01298.qmd.nco.multiblock.hx.HeatExchangerLogic;
+import lach_01298.qmd.nco.tile.TileContainerInfo;
+import lach_01298.qmd.nco.tile.hx.IHeatExchangerController;
+import lach_01298.qmd.nco.tile.hx.TileHeatExchangerPart;
+import lach_01298.qmd.nco.util.NCMath;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.EnumFacing;
@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import static nc.block.property.BlockProperties.FACING_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FACING_ALL;
 
 public class TileLiquefierController extends TileHeatExchangerPart implements IHeatExchangerController<TileLiquefierController>
 {

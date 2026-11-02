@@ -14,8 +14,8 @@ import lach_01298.qmd.recipe.QMDRecipeInfo;
 import lach_01298.qmd.recipe.ingredient.IParticleIngredient;
 import lach_01298.qmd.recipes.QMDRecipes;
 import lach_01298.qmd.util.Equations;
-import nc.tile.internal.fluid.Tank;
-import nc.tile.multiblock.TilePartAbstract.SyncReason;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.tile.multiblock.TilePartAbstract.SyncReason;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
@@ -27,7 +27,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import java.util.*;
 
 import static lach_01298.qmd.recipes.QMDRecipes.accelerator_source;
-import static nc.block.property.BlockProperties.FACING_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FACING_ALL;
 
 public class LinearAcceleratorLogic extends AcceleratorLogic
 {

@@ -77,7 +77,7 @@
 		{
 			"type": "text",
             
-            "text": "Though to make hot mercury we must first prime our casing coolant loop with mercury to create hot mercury. For more on mercury and steam cycles read the $(l:multiblocks/other_multiblocks/turbine_cycles)turbine cycles chapter$(/l). Let's choose hot mercury as our casing coolant. Looking in vacuum chamber heating category in JEI shows us that each mb of hot mercury (HM) produces 2 mb of high pressure mercury (HPM) and requires 256 H. Our chamber produces 383.648 kH/t so requires about 1499 mB/t of HM and produces 2997 mB/t of HPM." 
+            "text": "Though to make hot mercury we must first prime our casing coolant loop with mercury to create hot mercury. For how to turn the HPM into power and back into HM read the $(l:multiblocks/other_multiblocks/turbine_cycles)turbine cycles chapter$(/l). Let's choose hot mercury as our casing coolant. Looking in vacuum chamber heating category in JEI shows us that each mb of hot mercury (HM) produces 2 mb of high pressure mercury (HPM) and requires 128 H. Our chamber produces 383.648 kH/t so requires about 2997 mB/t of HM and produces 5995 mB/t of HPM." 
         },
 		{
 			"type": "diagram_low",

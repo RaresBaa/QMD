@@ -3,8 +3,8 @@ package lach_01298.qmd.recipes;
 import lach_01298.qmd.config.QMDConfig;
 import lach_01298.qmd.particle.*;
 import lach_01298.qmd.recipe.QMDRecipeHandler;
-import nc.recipe.BasicRecipeHandler;
-import nc.recipe.ingredient.EmptyFluidIngredient;
+import lach_01298.qmd.nco.recipe.BasicRecipeHandler;
+import lach_01298.qmd.nco.recipe.ingredient.EmptyFluidIngredient;
 
 import java.util.*;
 
@@ -24,19 +24,19 @@ public class NucleosynthesisChamberRecipes extends QMDRecipeHandler
 		//addRecipe(inputFluid1, inputFluid2, inputParticle,  outputFluid1, outputFluid2,  maxEnergy, heatRelased)
 		// muon catalysed fusion
 		addRecipe(fluidStack("hydrogen", 500),fluidStack("hydrogen", 500), new ParticleStack(Particles.muon,(int) (951300*scaleFactor),0,1),fluidStack("deuterium", 500), new EmptyFluidIngredient(), 1000L, 1950000L);
-		addRecipe(fluidStack("hydrogen", 500),fluidStack("deuterium", 500), new ParticleStack(Particles.muon,(int) (143100*scaleFactor),0,1),fluidStack("helium_3", 1000), new EmptyFluidIngredient(), 1000L, 5490000L);
-		addRecipe(fluidStack("helium_3", 1000),fluidStack("helium_3", 1000), new ParticleStack(Particles.muon,(int) (290000*scaleFactor),0,1),fluidStack("helium", 1000), fluidStack("hydrogen", 1000), 1000L, 12900000L);
+		addRecipe(fluidStack("hydrogen", 500),fluidStack("deuterium", 500), new ParticleStack(Particles.muon,(int) (143100*scaleFactor),0,1),fluidStack("helium3", 1000), new EmptyFluidIngredient(), 1000L, 5490000L);
+		addRecipe(fluidStack("helium3", 1000),fluidStack("helium3", 1000), new ParticleStack(Particles.muon,(int) (290000*scaleFactor),0,1),fluidStack("helium", 1000), fluidStack("hydrogen", 1000), 1000L, 12900000L);
 
 		addRecipe(fluidStack("deuterium", 500),fluidStack("tritium", 500), new ParticleStack(Particles.muon,(int) (155900*scaleFactor),0,1),fluidStack("helium", 1000), new EmptyFluidIngredient(), 1000L, 17600000L);
 		addRecipe(fluidStack("tritium", 500),fluidStack("tritium", 500), new ParticleStack(Particles.muon,(int) (161600*scaleFactor),0,1),fluidStack("helium", 1000), new EmptyFluidIngredient(), 1000L, 11300000L);
-		addRecipe(fluidStack("deuterium", 500),fluidStack("helium_3", 1000), new ParticleStack(Particles.muon,(int) (200600*scaleFactor),0,1),fluidStack("helium", 1000), fluidStack("hydrogen", 500), 1000L, 18400000L);
-		addRecipe(fluidStack("hydrogen", 500),fluidStack("lithium_7", 144), new ParticleStack(Particles.muon,(int) (223000*scaleFactor),0,1),fluidStack("helium", 2000), new EmptyFluidIngredient(), 1000L, 17300000L);
-		addRecipe(fluidStack("deuterium", 500),fluidStack("lithium_6", 144), new ParticleStack(Particles.muon,(int) (252200*scaleFactor),0,1),fluidStack("helium", 2000), new EmptyFluidIngredient(), 1000L, 22400000L);
-		addRecipe(fluidStack("tritium", 500),fluidStack("helium_3", 1000), new ParticleStack(Particles.muon,(int) (210200*scaleFactor),0,1),fluidStack("helium", 1000), fluidStack("hydrogen", 500), 1000L, 12100000L);
+		addRecipe(fluidStack("deuterium", 500),fluidStack("helium3", 1000), new ParticleStack(Particles.muon,(int) (200600*scaleFactor),0,1),fluidStack("helium", 1000), fluidStack("hydrogen", 500), 1000L, 18400000L);
+		addRecipe(fluidStack("hydrogen", 500),fluidStack("lithium7", 144), new ParticleStack(Particles.muon,(int) (223000*scaleFactor),0,1),fluidStack("helium", 2000), new EmptyFluidIngredient(), 1000L, 17300000L);
+		addRecipe(fluidStack("deuterium", 500),fluidStack("lithium6", 144), new ParticleStack(Particles.muon,(int) (252200*scaleFactor),0,1),fluidStack("helium", 2000), new EmptyFluidIngredient(), 1000L, 22400000L);
+		addRecipe(fluidStack("tritium", 500),fluidStack("helium3", 1000), new ParticleStack(Particles.muon,(int) (210200*scaleFactor),0,1),fluidStack("helium", 1000), fluidStack("hydrogen", 500), 1000L, 12100000L);
 		addRecipe(fluidStack("deuterium", 500),fluidStack("deuterium", 500), new ParticleStack(Particles.muon,(int) (151600*scaleFactor),0,1),fluidStack("tritium", 500), fluidStack("hydrogen", 500), 1000L, 4030000L);
-		addRecipe(fluidStack("helium_3", 1000),fluidStack("lithium_6", 144), new ParticleStack(Particles.muon,(int) (385700*scaleFactor),0,1),fluidStack("helium", 2000), fluidStack("hydrogen", 500), 1000L, 16900000L);
-		addRecipe(fluidStack("hydrogen", 500),fluidStack("boron_11", 144), new ParticleStack(Particles.muon,(int) (286700*scaleFactor),0,1),fluidStack("helium", 3000), new EmptyFluidIngredient(), 1000L, 8680000L);
-		addRecipe(fluidStack("hydrogen", 500),fluidStack("lithium_6", 144), new ParticleStack(Particles.muon,(int) (222000*scaleFactor),0,1),fluidStack("helium", 1000), fluidStack("helium_3", 1000), 1000L, 4020000L);
+		addRecipe(fluidStack("helium3", 1000),fluidStack("lithium6", 144), new ParticleStack(Particles.muon,(int) (385700*scaleFactor),0,1),fluidStack("helium", 2000), fluidStack("hydrogen", 500), 1000L, 16900000L);
+		addRecipe(fluidStack("hydrogen", 500),fluidStack("boron11", 144), new ParticleStack(Particles.muon,(int) (286700*scaleFactor),0,1),fluidStack("helium", 3000), new EmptyFluidIngredient(), 1000L, 8680000L);
+		addRecipe(fluidStack("hydrogen", 500),fluidStack("lithium6", 144), new ParticleStack(Particles.muon,(int) (222000*scaleFactor),0,1),fluidStack("helium", 1000), fluidStack("helium3", 1000), 1000L, 4020000L);
 		
 		
 		addRecipe(fluidStack("carbon", 100),fluidStack("hydrogen", 1000), new ParticleStack(Particles.muon,(int) (541800*scaleFactor),0,1),fluidStack("nitrogen", 500), new EmptyFluidIngredient(), 1000L, 10700000L);

@@ -4,9 +4,9 @@ import crafttweaker.*;
 import crafttweaker.api.item.IIngredient;
 import lach_01298.qmd.recipe.*;
 import lach_01298.qmd.recipe.ingredient.IParticleIngredient;
-import nc.integration.crafttweaker.CTHelper;
-import nc.recipe.IngredientSorption;
-import nc.recipe.ingredient.*;
+import lach_01298.qmd.nco.integration.crafttweaker.CTHelper;
+import lach_01298.qmd.nco.recipe.IngredientSorption;
+import lach_01298.qmd.nco.recipe.ingredient.*;
 
 import java.util.*;
 

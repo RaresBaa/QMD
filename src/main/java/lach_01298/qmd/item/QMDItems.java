@@ -4,8 +4,8 @@ import lach_01298.qmd.*;
 import lach_01298.qmd.config.QMDConfig;
 import lach_01298.qmd.enums.MaterialTypes.*;
 import lach_01298.qmd.tab.QMDTabs;
-import nc.item.*;
-import nc.item.tool.*;
+import lach_01298.qmd.nco.item.*;
+import lach_01298.qmd.nco.item.tool.*;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.*;
@@ -21,6 +21,7 @@ public class QMDItems
 {
 
 	public static Item dust;
+	public static Item multitool;
 	public static Item dust2;
 	public static Item ingot;
 	public static Item ingot2;
@@ -59,13 +60,11 @@ public class QMDItems
 	public static Item advanced_drill;
 	
 	public static Item copernicium;
-	public static Item pellet_copernicium;
-	public static Item fuel_copernicium;
-	public static Item depleted_fuel_copernicium;
 	
 	public static void init()
 	{
 		dust = withName(new NCItemMeta(DustType.class), "dust");
+		multitool = withName(new lach_01298.qmd.nco.item.ItemMultitool(), "multitool");
 		dust2 = withName(new NCItemMeta(DustType2.class), "dust2");
 		ingot = withName(new NCItemMeta(IngotType.class), "ingot");
 		ingot2 = withName(new NCItemMeta(IngotType2.class), "ingot2");
@@ -114,9 +113,6 @@ public class QMDItems
 		cell = withName(new ItemCell(),"cell");
 		
 		copernicium = withName(new NCItemMeta(CoperniciumType.class), "copernicium");
-		pellet_copernicium = withName(new NCItemMeta(CoperniciumPelletType.class), "pellet_copernicium");
-		fuel_copernicium = withName(new ItemFissionFuel(CoperniciumFuelType.class), "fuel_copernicium");
-		depleted_fuel_copernicium = withName(new NCItemMeta(CoperniciumDepletedFuelType.class), "depleted_fuel_copernicium");
 		
 		
 	}
@@ -124,6 +120,7 @@ public class QMDItems
 	public static void register()
 	{
 		registerItem(dust, QMDTabs.ITEMS);
+		registerItem(multitool, QMDTabs.ITEMS);
 		registerItem(dust2, QMDTabs.ITEMS);
 		registerItem(ingot, QMDTabs.ITEMS);
 		registerItem(ingot2, QMDTabs.ITEMS);
@@ -167,15 +164,13 @@ public class QMDItems
 		
 		
 		registerItem(copernicium,QMDTabs.ITEMS);
-		registerItem(pellet_copernicium,QMDTabs.ITEMS);
-		registerItem(fuel_copernicium,QMDTabs.ITEMS);
-		registerItem(depleted_fuel_copernicium,QMDTabs.ITEMS);
 		
 		
 	}
 
 	public static void registerRenders()
 	{
+		registerRender(multitool);
 		for(int i = 0; i < DustType.values().length; i++)
 		{
 			registerRender(dust, i, DustType.values()[i].getName());
@@ -281,13 +276,10 @@ public class QMDItems
 			registerRender(copernicium, i, CoperniciumType.values()[i].getName());
 		}
 		for (int i = 0; i < CoperniciumPelletType.values().length; i++) {
-			registerRender(pellet_copernicium, i, CoperniciumPelletType.values()[i].getName());
 		}
 		for (int i = 0; i < CoperniciumFuelType.values().length; i++) {
-			registerRender(fuel_copernicium, i, CoperniciumFuelType.values()[i].getName());
 		}
 		for (int i = 0; i < CoperniciumDepletedFuelType.values().length; i++) {
-			registerRender(depleted_fuel_copernicium, i, CoperniciumDepletedFuelType.values()[i].getName());
 		}
 	}
 	

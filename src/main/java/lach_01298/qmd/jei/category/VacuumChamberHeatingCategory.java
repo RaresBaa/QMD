@@ -5,9 +5,9 @@ import lach_01298.qmd.jei.recipe.VacuumChamberHeatingRecipe;
 import mezz.jei.api.IGuiHelper;
 import mezz.jei.api.gui.IRecipeLayout;
 import mezz.jei.api.ingredients.IIngredients;
-import nc.integration.jei.JEIHelper.RecipeFluidMapper;
-import nc.recipe.IngredientSorption;
-import nc.util.Lang;
+import lach_01298.qmd.nco.integration.jei.JEIHelper.RecipeFluidMapper;
+import lach_01298.qmd.nco.recipe.IngredientSorption;
+import lach_01298.qmd.nco.util.Lang;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.TextFormatting;
 

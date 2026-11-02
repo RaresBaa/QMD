@@ -4,14 +4,14 @@ import com.google.common.collect.Lists;
 import lach_01298.qmd.accelerator.tile.TileAcceleratorVent;
 import lach_01298.qmd.liquefier.LiquefierLogic;
 import nc.ModCheck;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
-import nc.multiblock.hx.HeatExchanger;
-import nc.tile.fluid.ITileFluid;
-import nc.tile.hx.TileHeatExchangerPart;
-import nc.tile.internal.fluid.*;
-import nc.tile.passive.ITilePassive;
-import nc.util.CapabilityHelper;
-import nc.util.Lang;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.multiblock.hx.HeatExchanger;
+import lach_01298.qmd.nco.tile.fluid.ITileFluid;
+import lach_01298.qmd.nco.tile.hx.TileHeatExchangerPart;
+import lach_01298.qmd.nco.tile.internal.fluid.*;
+import lach_01298.qmd.nco.tile.passive.ITilePassive;
+import lach_01298.qmd.nco.util.CapabilityHelper;
+import lach_01298.qmd.nco.util.Lang;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -31,7 +31,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
-import static nc.block.property.BlockProperties.FACING_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FACING_ALL;
 import static nc.config.NCConfig.enable_mek_gas;
 
 public class TileLiquefierFluidPort extends TileHeatExchangerPart implements ITickable, ITileFluid

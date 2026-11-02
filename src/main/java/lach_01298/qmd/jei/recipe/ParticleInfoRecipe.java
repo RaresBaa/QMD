@@ -5,7 +5,7 @@ import lach_01298.qmd.particle.ParticleStack;
 import lach_01298.qmd.util.Units;
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.recipe.IRecipeWrapper;
-import nc.util.Lang;
+import lach_01298.qmd.nco.util.Lang;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 

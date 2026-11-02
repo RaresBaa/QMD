@@ -1,9 +1,9 @@
 package lach_01298.qmd.multiblock;
 
-import nc.multiblock.Multiblock;
-import nc.multiblock.internal.MultiblockValidationError;
-import nc.tile.multiblock.ITileMultiblockPart;
-import nc.util.NCMath;
+import lach_01298.qmd.nco.multiblock.Multiblock;
+import lach_01298.qmd.nco.multiblock.internal.MultiblockValidationError;
+import lach_01298.qmd.nco.tile.multiblock.ITileMultiblockPart;
+import lach_01298.qmd.nco.util.NCMath;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;

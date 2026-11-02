@@ -1,9 +1,8 @@
 package lach_01298.qmd.multiblock.network;
 
 import io.netty.buffer.ByteBuf;
-import nc.multiblock.fission.FissionCluster;
-import nc.network.tile.TileUpdatePacket;
-import nc.tile.*;
+import lach_01298.qmd.nco.network.tile.TileUpdatePacket;
+import lach_01298.qmd.nco.tile.*;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
@@ -24,14 +23,14 @@ public class TargetChamberControllerUpdatePacket extends TileUpdatePacket
 	}
 
 	public TargetChamberControllerUpdatePacket(BlockPos pos, BlockPos masterPortPos,
-			NonNullList<ItemStack> filterStacks, FissionCluster cluster, boolean isProcessing, double time,
+			NonNullList<ItemStack> filterStacks, boolean isProcessing, double time,
 			double baseProcessTime)
 	{
 		this.pos = pos;
 		this.masterPortPos = masterPortPos;
 		filterStack = filterStacks.get(0);
-		clusterHeatStored = cluster == null ? -1L : cluster.heatBuffer.getHeatStored();
-		clusterHeatCapacity = cluster == null ? -1L : cluster.heatBuffer.getHeatCapacity();
+		clusterHeatStored = -1L;
+		clusterHeatCapacity = -1L;
 		this.isProcessing = isProcessing;
 		this.time = time;
 		this.baseProcessTime = baseProcessTime;

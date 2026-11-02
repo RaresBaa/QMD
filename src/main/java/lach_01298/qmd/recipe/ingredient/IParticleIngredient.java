@@ -1,8 +1,8 @@
 package lach_01298.qmd.recipe.ingredient;
 
 import lach_01298.qmd.particle.ParticleStack;
-import nc.recipe.*;
-import nc.recipe.ingredient.IIngredient;
+import lach_01298.qmd.nco.recipe.*;
+import lach_01298.qmd.nco.recipe.ingredient.IIngredient;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package lach_01298.qmd.item;
 
 import com.google.common.base.*;
-import nc.item.NCItem;
+import lach_01298.qmd.nco.item.NCItem;
 import net.minecraft.entity.*;
 import net.minecraft.util.*;
 import net.minecraft.util.math.*;

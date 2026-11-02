@@ -1,0 +1,33 @@
+package lach_01298.qmd.nco.fluid;
+
+import lach_01298.qmd.nco.util.ColorHelper;
+import net.minecraft.init.SoundEvents;
+
+public class FluidHotCoolant extends NCFluid {
+	
+	private static final Integer NAK_COLOR = 0xFFE5BC;
+	
+	public FluidHotCoolant(String fluidName) {
+		super(fluidName, true);
+		setViscosity(10000);
+		setTemperature(800);
+		setLuminosity(7);
+		setDensity(4000);
+		setEmptySound(SoundEvents.ITEM_BUCKET_EMPTY_LAVA);
+		setFillSound(SoundEvents.ITEM_BUCKET_FILL_LAVA);
+	}
+	
+	public FluidHotCoolant(String fluidName, Integer color) {
+		super(fluidName, true, "molten", color);
+		setViscosity(10000);
+		setTemperature(800);
+		setLuminosity(7);
+		setDensity(4000);
+		setEmptySound(SoundEvents.ITEM_BUCKET_EMPTY_LAVA);
+		setFillSound(SoundEvents.ITEM_BUCKET_FILL_LAVA);
+	}
+	
+	public static int getNAKColor(Integer color) {
+		return ColorHelper.blend(color, NAK_COLOR, 0.2F);
+	}
+}

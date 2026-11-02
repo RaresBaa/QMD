@@ -2,7 +2,7 @@ package lach_01298.qmd.item;
 
 import lach_01298.qmd.block.QMDBlocks;
 import lach_01298.qmd.enums.MaterialTypes.LuminousPaintType;
-import nc.item.NCItemMeta;
+import lach_01298.qmd.nco.item.NCItemMeta;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.*;
@@ -11,7 +11,7 @@ import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import static nc.block.property.BlockProperties.FACING_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FACING_ALL;
 
 public class ItemLuminousPaint extends NCItemMeta
 {

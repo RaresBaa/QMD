@@ -3,7 +3,7 @@ package lach_01298.qmd.recipes;
 import lach_01298.qmd.item.QMDItems;
 import lach_01298.qmd.recipe.QMDRecipeHandler;
 import nc.init.NCBlocks;
-import nc.recipe.BasicRecipeHandler;
+import lach_01298.qmd.nco.recipe.BasicRecipeHandler;
 import net.minecraft.init.*;
 import net.minecraft.item.ItemStack;
 
@@ -28,6 +28,11 @@ public class IrradiatorRecipes extends QMDRecipeHandler
 		addRecipe(Blocks.MOSSY_COBBLESTONE, Blocks.COBBLESTONE,1.0);
 		addRecipe(new ItemStack(Blocks.STONEBRICK,1,1), Blocks.STONEBRICK,1.0);
 		addRecipe(new ItemStack(Blocks.COBBLESTONE_WALL,1,1), Blocks.COBBLESTONE_WALL,1.0);
+		
+		// NCO makes these in its fission irradiator. The times keep the ratio of NCO's neutron flux costs.
+		addRecipe("waferSilicon", "siliconNDoped", 1.0);
+		addRecipe("ingotCobalt", "ingotCobalt60", 16.0);
+		addRecipe("ingotIridium192", "ingotIridium", 16.0);
 	}
 
 	@Override

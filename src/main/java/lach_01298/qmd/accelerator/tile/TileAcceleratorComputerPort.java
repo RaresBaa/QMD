@@ -4,7 +4,7 @@ import lach_01298.qmd.accelerator.*;
 import lach_01298.qmd.particle.ParticleStack;
 import li.cil.oc.api.machine.*;
 import li.cil.oc.api.network.SimpleComponent;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

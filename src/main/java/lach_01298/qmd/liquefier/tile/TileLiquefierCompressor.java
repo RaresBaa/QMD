@@ -2,9 +2,9 @@ package lach_01298.qmd.liquefier.tile;
 
 import lach_01298.qmd.accelerator.tile.TileAcceleratorMagnet;
 import lach_01298.qmd.config.QMDConfig;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
-import nc.multiblock.hx.HeatExchanger;
-import nc.tile.hx.TileHeatExchangerPart;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.multiblock.hx.HeatExchanger;
+import lach_01298.qmd.nco.tile.hx.TileHeatExchangerPart;
 
 public class TileLiquefierCompressor extends TileHeatExchangerPart
 {

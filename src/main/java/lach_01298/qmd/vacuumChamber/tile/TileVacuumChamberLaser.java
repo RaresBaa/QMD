@@ -2,10 +2,10 @@ package lach_01298.qmd.vacuumChamber.tile;
 
 import lach_01298.qmd.config.QMDConfig;
 import lach_01298.qmd.vacuumChamber.VacuumChamber;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
 import net.minecraft.nbt.NBTTagCompound;
 
-import static nc.block.property.BlockProperties.FACING_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FACING_ALL;
 
 public class TileVacuumChamberLaser extends TileVacuumChamberPart implements IVacuumChamberComponent
 {

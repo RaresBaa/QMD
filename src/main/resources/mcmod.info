@@ -2,7 +2,7 @@
 {
   "modid": "qmd",
   "name": "Quantum Minecraft Dynamics",
-  "description": "A Nuclearcraft addon that aims to bring particle accelerators and particle physics to minecraft",
+  "description": "A Nuclearcraft addon that aims to bring particle accelerators and particle physics to minecraft. Ported to plain NuclearCraft 2.19c.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "https://www.curseforge.com/minecraft/mc-mods/qmd",
@@ -11,6 +11,6 @@
   "credits": "tomdodd4598 For making NuclearCraft",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": ["nuclearcraft", "nclegacy"]
+  "dependencies": ["nuclearcraft"]
 }
 ]

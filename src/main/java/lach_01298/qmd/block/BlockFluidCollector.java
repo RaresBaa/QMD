@@ -2,10 +2,10 @@ package lach_01298.qmd.block;
 
 import lach_01298.qmd.enums.BlockTypes.FluidCollectorType;
 import lach_01298.qmd.tile.TileFluidCollector;
-import nc.block.tile.BlockTile;
-import nc.block.tile.ITileType;
-import nc.util.Lang;
-import nc.util.UnitHelper;
+import lach_01298.qmd.nco.block.tile.BlockTile;
+import lach_01298.qmd.nco.block.tile.ITileType;
+import lach_01298.qmd.nco.util.Lang;
+import lach_01298.qmd.nco.util.UnitHelper;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;

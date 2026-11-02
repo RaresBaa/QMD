@@ -2,7 +2,7 @@ package lach_01298.qmd.jei.recipe;
 
 import lach_01298.qmd.recipes.QMDRecipes;
 import mezz.jei.api.IJeiHelpers;
-import nc.recipe.BasicRecipe;
+import lach_01298.qmd.nco.recipe.BasicRecipe;
 
 import java.util.ArrayList;
 import java.util.List;

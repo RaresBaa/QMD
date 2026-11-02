@@ -2,9 +2,9 @@ package lach_01298.qmd.recipe;
 
 import lach_01298.qmd.particle.ParticleStack;
 import lach_01298.qmd.recipe.ingredient.IParticleIngredient;
-import nc.recipe.IngredientSorption;
-import nc.recipe.ingredient.*;
-import nc.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.recipe.IngredientSorption;
+import lach_01298.qmd.nco.recipe.ingredient.*;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
 import net.minecraft.item.ItemStack;
 
 import java.util.List;

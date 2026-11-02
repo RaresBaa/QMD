@@ -1,8 +1,8 @@
 package lach_01298.qmd.accelerator.block;
 
 import lach_01298.qmd.accelerator.tile.TileBeamDiverterController;
-import nc.block.tile.IActivatable;
-import nc.util.BlockHelper;
+import lach_01298.qmd.nco.block.tile.IActivatable;
+import lach_01298.qmd.nco.util.BlockHelper;
 import net.minecraft.block.state.*;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -11,7 +11,7 @@ import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import static nc.block.property.BlockProperties.*;
+import static lach_01298.qmd.nco.block.property.BlockProperties.*;
 
 public class BlockBeamDiverterController extends BlockAcceleratorPart implements IActivatable
 {

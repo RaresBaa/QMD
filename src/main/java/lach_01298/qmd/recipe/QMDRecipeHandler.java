@@ -1,5 +1,8 @@
 package lach_01298.qmd.recipe;
 
+import lach_01298.qmd.nco.config.NCOConfig;
+import static lach_01298.qmd.nco.config.NCOConfig.*;
+
 import crafttweaker.CraftTweakerAPI;
 import crafttweaker.annotations.ZenRegister;
 import it.unimi.dsi.fastutil.ints.*;
@@ -13,12 +16,12 @@ import lach_01298.qmd.recipe.ingredient.IParticleIngredient;
 import lach_01298.qmd.recipes.QMDRecipes;
 import lach_01298.qmd.util.Util;
 import nc.config.NCConfig;
-import nc.recipe.BasicRecipe;
-import nc.recipe.IngredientSorption;
-import nc.recipe.RecipeInfo;
-import nc.recipe.ingredient.*;
-import nc.tile.internal.fluid.Tank;
-import nc.util.*;
+import lach_01298.qmd.nco.recipe.BasicRecipe;
+import lach_01298.qmd.nco.recipe.IngredientSorption;
+import lach_01298.qmd.nco.recipe.RecipeInfo;
+import lach_01298.qmd.nco.recipe.ingredient.*;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.util.*;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidTank;
@@ -74,7 +77,7 @@ public abstract class QMDRecipeHandler extends AbstractQMDRecipeHandler<QMDRecip
 	public void addRecipe(Object... objects)
 	{
 		QMDRecipe recipe = this.buildRecipe(objects);
-		this.addRecipe(NCConfig.factor_recipes ? factorRecipe(recipe) : recipe);
+		this.addRecipe(recipe);
 	}
 
 	public QMDRecipe newRecipe(List<IItemIngredient> itemIngredients, List<IFluidIngredient> fluidIngredients,List<IParticleIngredient> particleIngredients, List<IItemIngredient> itemProducts, List<IFluidIngredient> fluidProducts, List<IParticleIngredient> particleProducts, List<Object> extras, boolean shapeless)

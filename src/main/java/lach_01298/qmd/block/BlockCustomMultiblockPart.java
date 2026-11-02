@@ -1,7 +1,7 @@
 package lach_01298.qmd.block;
 
 import lach_01298.qmd.tab.QMDTabs;
-import nc.block.multiblock.BlockMultiblockPart;
+import lach_01298.qmd.nco.block.multiblock.BlockMultiblockPart;
 import net.minecraft.block.material.Material;
 
 public abstract class BlockCustomMultiblockPart extends BlockMultiblockPart

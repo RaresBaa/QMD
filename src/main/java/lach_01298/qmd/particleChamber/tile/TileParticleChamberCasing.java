@@ -1,8 +1,8 @@
 package lach_01298.qmd.particleChamber.tile;
 
 import lach_01298.qmd.particleChamber.ParticleChamber;
-import nc.block.property.BlockProperties;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.block.property.BlockProperties;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

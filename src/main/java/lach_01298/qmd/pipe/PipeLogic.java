@@ -1,7 +1,7 @@
 package lach_01298.qmd.pipe;
 
-import nc.multiblock.*;
-import nc.tile.multiblock.TilePartAbstract.SyncReason;
+import lach_01298.qmd.nco.multiblock.*;
+import lach_01298.qmd.nco.tile.multiblock.TilePartAbstract.SyncReason;
 import net.minecraft.nbt.NBTTagCompound;
 import org.apache.commons.lang3.tuple.Pair;
 

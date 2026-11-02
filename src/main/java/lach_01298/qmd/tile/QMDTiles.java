@@ -3,9 +3,9 @@ package lach_01298.qmd.tile;
 import lach_01298.qmd.QMD;
 import lach_01298.qmd.accelerator.tile.*;
 import lach_01298.qmd.enums.BlockTypes.*;
-import lach_01298.qmd.fission.tile.QMDTileFissionShield;
 import lach_01298.qmd.liquefier.tile.*;
 import lach_01298.qmd.machine.tile.TileQMDProcessors;
+import lach_01298.qmd.nco.tile.hx.*;
 import lach_01298.qmd.particleChamber.tile.*;
 import lach_01298.qmd.pipe.TileBeamline;
 import lach_01298.qmd.util.Util;
@@ -31,10 +31,7 @@ public class QMDTiles
 	{
 		//other
 		GameRegistry.registerTileEntity(TileBeamline.class,new ResourceLocation(QMD.MOD_ID,"beamline"));
-		GameRegistry.registerTileEntity(QMDTileRTG.Strontium.class,new ResourceLocation(QMD.MOD_ID,"rtg_strontium"));
-		GameRegistry.registerTileEntity(QMDTileFissionShield.Hafnium.class,new ResourceLocation(QMD.MOD_ID,"fission_shield_hafnium"));
 		GameRegistry.registerTileEntity(TileCreativeParticleSource.class,new ResourceLocation(QMD.MOD_ID,"creative_particle_source"));
-		GameRegistry.registerTileEntity(QMDTileTurbineBlade.SuperAlloy.class,new ResourceLocation(QMD.MOD_ID,"turbine_blade_super_alloy"));
 		
 		//Accelerator parts
 		GameRegistry.registerTileEntity(TileLinearAcceleratorController.class,Util.appendPath(acceleratorPath, "linear_controller"));
@@ -181,6 +178,15 @@ public class QMDTiles
 		GameRegistry.registerTileEntity(TileLiquefierNozzle.class,new ResourceLocation(QMD.MOD_ID,"liquefier_nozzle"));
 		GameRegistry.registerTileEntity(TileLiquefierFluidPort.class,new ResourceLocation(QMD.MOD_ID,"liquefier_fluid_port"));
 		GameRegistry.registerTileEntity(TileLiquefierEnergyPort.class,new ResourceLocation(QMD.MOD_ID,"liquefier_energy_port"));
+		GameRegistry.registerTileEntity(TileHeatExchangerCasing.class,new ResourceLocation(QMD.MOD_ID,"liquefier_casing"));
+		GameRegistry.registerTileEntity(TileHeatExchangerGlass.class,new ResourceLocation(QMD.MOD_ID,"liquefier_glass"));
+		GameRegistry.registerTileEntity(TileHeatExchangerBaffle.class,new ResourceLocation(QMD.MOD_ID,"liquefier_baffle"));
+		GameRegistry.registerTileEntity(TileHeatExchangerInlet.class,new ResourceLocation(QMD.MOD_ID,"liquefier_inlet"));
+		GameRegistry.registerTileEntity(TileHeatExchangerOutlet.class,new ResourceLocation(QMD.MOD_ID,"liquefier_outlet"));
+		GameRegistry.registerTileEntity(TileHeatExchangerTube.class,new ResourceLocation(QMD.MOD_ID,"liquefier_tube"));
+		GameRegistry.registerTileEntity(TileHeatExchangerTube.Copper.class,new ResourceLocation(QMD.MOD_ID,"liquefier_tube_copper"));
+		GameRegistry.registerTileEntity(TileHeatExchangerTube.HardCarbon.class,new ResourceLocation(QMD.MOD_ID,"liquefier_tube_hard_carbon"));
+		GameRegistry.registerTileEntity(TileHeatExchangerTube.Thermoconducting.class,new ResourceLocation(QMD.MOD_ID,"liquefier_tube_thermoconducting"));
 		GameRegistry.registerTileEntity(TileLiquefierCompressor.class, Util.appendPath(compressorPath, "compressor"));
 		GameRegistry.registerTileEntity(TileLiquefierCompressor.Copper.class, Util.appendPath(compressorPath, CompressorType.COPPER.getName()));
 		GameRegistry.registerTileEntity(TileLiquefierCompressor.Neodymium.class, Util.appendPath(compressorPath, CompressorType.NEODYMIUM.getName()));

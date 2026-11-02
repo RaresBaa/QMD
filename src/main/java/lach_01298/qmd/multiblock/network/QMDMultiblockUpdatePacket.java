@@ -1,7 +1,7 @@
 package lach_01298.qmd.multiblock.network;
 
 import lach_01298.qmd.network.QMDPackets;
-import nc.network.multiblock.MultiblockUpdatePacket;
+import lach_01298.qmd.nco.network.multiblock.MultiblockUpdatePacket;
 import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 

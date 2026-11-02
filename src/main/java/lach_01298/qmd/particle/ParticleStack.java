@@ -1,7 +1,7 @@
 package lach_01298.qmd.particle;
 
 import lach_01298.qmd.config.QMDConfig;
-import nc.util.NCMath;
+import lach_01298.qmd.nco.util.NCMath;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.util.Constants;
 

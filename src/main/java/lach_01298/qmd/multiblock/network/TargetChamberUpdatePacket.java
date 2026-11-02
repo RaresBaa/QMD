@@ -4,10 +4,10 @@ import io.netty.buffer.ByteBuf;
 import lach_01298.qmd.particle.ParticleStorageAccelerator;
 import lach_01298.qmd.particleChamber.ParticleChamber;
 import lach_01298.qmd.particleChamber.tile.*;
-import nc.network.multiblock.MultiblockUpdatePacket;
-import nc.tile.TileContainerInfo;
-import nc.tile.internal.energy.EnergyStorage;
-import nc.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.network.multiblock.MultiblockUpdatePacket;
+import lach_01298.qmd.nco.tile.TileContainerInfo;
+import lach_01298.qmd.nco.tile.internal.energy.EnergyStorage;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
 import net.minecraft.util.math.BlockPos;
 
 import java.util.*;

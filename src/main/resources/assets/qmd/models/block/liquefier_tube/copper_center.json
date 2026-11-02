@@ -1,0 +1,6 @@
+{
+	"parent": "qmd:block/liquefier_tube_center",
+	"textures": {
+		"all": "nuclearcraft:blocks/heat_exchanger/tube/copper/center"
+	}
+}

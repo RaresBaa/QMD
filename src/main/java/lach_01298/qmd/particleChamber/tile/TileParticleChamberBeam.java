@@ -1,7 +1,7 @@
 package lach_01298.qmd.particleChamber.tile;
 
 import lach_01298.qmd.particleChamber.ParticleChamber;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
 import net.minecraft.nbt.NBTTagCompound;
 
 public class TileParticleChamberBeam extends TileParticleChamberPart implements IParticleChamberComponent

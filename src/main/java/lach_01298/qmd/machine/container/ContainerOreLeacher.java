@@ -3,9 +3,8 @@ package lach_01298.qmd.machine.container;
 import lach_01298.qmd.container.slot.SlotQMDProcessorInput;
 import lach_01298.qmd.machine.tile.TileQMDProcessor;
 import lach_01298.qmd.recipes.QMDRecipes;
-import nc.container.slot.*;
-import nclegacy.container.ContainerItemFluidProcessorLegacy;
-import nclegacy.tile.TileItemFluidProcessorLegacy;
+import lach_01298.qmd.nco.container.slot.*;
+import lach_01298.qmd.nco.legacy.container.ContainerItemFluidProcessorLegacy;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Slot;
 

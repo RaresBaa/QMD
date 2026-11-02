@@ -3,7 +3,7 @@ package lach_01298.qmd.machine.network;
 import io.netty.buffer.ByteBuf;
 import lach_01298.qmd.QMD;
 import lach_01298.qmd.network.QMDPacket;
-import nclegacy.tile.ITileGuiLegacy;
+import lach_01298.qmd.nco.legacy.tile.ITileGuiLegacy;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;

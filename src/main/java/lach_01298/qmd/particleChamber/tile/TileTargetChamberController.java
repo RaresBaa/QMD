@@ -1,6 +1,6 @@
 package lach_01298.qmd.particleChamber.tile;
 
-import static nc.block.property.BlockProperties.FACING_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FACING_ALL;
 
 import java.util.Set;
 
@@ -14,16 +14,16 @@ import lach_01298.qmd.QMD;
 import lach_01298.qmd.particleChamber.ParticleChamber;
 import lach_01298.qmd.recipe.QMDRecipeHandler;
 import lach_01298.qmd.recipes.QMDRecipes;
-import nc.handler.TileInfoHandler;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
-import nc.render.BlockHighlightTracker;
-import nc.tile.TileContainerInfo;
-import nc.tile.internal.inventory.InventoryConnection;
-import nc.tile.internal.inventory.ItemOutputSetting;
-import nc.tile.internal.inventory.ItemSorption;
-import nc.tile.inventory.ITileInventory;
-import nc.util.Lang;
-import nc.util.NBTHelper;
+import lach_01298.qmd.nco.handler.TileInfoHandler;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.render.BlockHighlightTracker;
+import lach_01298.qmd.nco.tile.TileContainerInfo;
+import lach_01298.qmd.nco.tile.internal.inventory.InventoryConnection;
+import lach_01298.qmd.nco.tile.internal.inventory.ItemOutputSetting;
+import lach_01298.qmd.nco.tile.internal.inventory.ItemSorption;
+import lach_01298.qmd.nco.tile.inventory.ITileInventory;
+import lach_01298.qmd.nco.util.Lang;
+import lach_01298.qmd.nco.util.NBTHelper;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;

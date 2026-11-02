@@ -1,8 +1,8 @@
 package lach_01298.qmd.multiblock.block;
 
 import lach_01298.qmd.tab.QMDTabs;
-import nc.block.multiblock.BlockMultiblockMetaPart;
-import nc.enumm.IBlockMetaEnum;
+import lach_01298.qmd.nco.block.multiblock.BlockMultiblockMetaPart;
+import lach_01298.qmd.nco.enumm.IBlockMetaEnum;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.util.IStringSerializable;

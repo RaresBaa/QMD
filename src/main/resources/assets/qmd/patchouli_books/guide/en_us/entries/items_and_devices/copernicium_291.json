@@ -7,7 +7,7 @@
 			{
             "type": "spotlight",
 			"item": "qmd:copernicium",
-			"text": "Copernicium 291 is a super heavy isotope in the 'island of stability'. It can only be made using particle accelerators. Its main use is as a high end fission reactor fuel but can also be used as a very good neutron multiplier in $(l:multiblocks/particle_chambers/target_chamber)target chabers$(/l)."
+			"text": "Copernicium 291 is a super heavy isotope in the 'island of stability'. It can only be made using particle accelerators. Its main use is as a very good neutron multiplier in $(l:multiblocks/particle_chambers/target_chamber)target chambers$(/l)."
 			}
 	]
 }

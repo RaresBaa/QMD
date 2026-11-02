@@ -1,6 +1,6 @@
 package lach_01298.qmd.multiblock;
 
-import nc.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
 package lach_01298.qmd.pipe;
 
-import static nc.block.property.BlockProperties.AXIS_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.AXIS_ALL;
 
 import lach_01298.qmd.particle.ParticleStorageBeamline;
-import nc.tile.multiblock.TilePartAbstract.SyncReason;
+import lach_01298.qmd.nco.tile.multiblock.TilePartAbstract.SyncReason;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing.Axis;
 

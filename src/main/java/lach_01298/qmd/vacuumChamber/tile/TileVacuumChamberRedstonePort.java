@@ -2,8 +2,8 @@ package lach_01298.qmd.vacuumChamber.tile;
 
 import lach_01298.qmd.vacuumChamber.VacuumChamber;
 import lach_01298.qmd.vacuumChamber.block.BlockVacuumChamberRedstonePort;
-import nc.multiblock.cuboidal.CuboidalPartPositionType;
-import nc.util.Lang;
+import lach_01298.qmd.nco.multiblock.cuboidal.CuboidalPartPositionType;
+import lach_01298.qmd.nco.util.Lang;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.*;
 import net.minecraft.item.ItemStack;
@@ -16,7 +16,7 @@ import net.minecraftforge.common.capabilities.Capability;
 
 import javax.annotation.Nullable;
 
-import static nc.block.property.BlockProperties.ACTIVE;
+import static lach_01298.qmd.nco.block.property.BlockProperties.ACTIVE;
 
 public class TileVacuumChamberRedstonePort extends TileVacuumChamberPart
 {

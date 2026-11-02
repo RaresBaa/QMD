@@ -2,8 +2,8 @@ package lach_01298.qmd.util;
 
 import io.netty.buffer.ByteBuf;
 import lach_01298.qmd.particle.*;
-import nc.tile.internal.energy.EnergyStorage;
-import nc.tile.internal.heat.HeatBuffer;
+import lach_01298.qmd.nco.tile.internal.energy.EnergyStorage;
+import lach_01298.qmd.nco.tile.internal.heat.HeatBuffer;
 import net.minecraftforge.fml.common.network.ByteBufUtils;
 
 public class ByteUtil

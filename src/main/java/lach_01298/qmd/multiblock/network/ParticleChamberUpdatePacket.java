@@ -3,9 +3,9 @@ package lach_01298.qmd.multiblock.network;
 import io.netty.buffer.ByteBuf;
 import lach_01298.qmd.particle.*;
 import lach_01298.qmd.util.ByteUtil;
-import nc.tile.internal.energy.EnergyStorage;
-import nc.tile.internal.fluid.Tank;
-import nc.tile.internal.fluid.Tank.TankInfo;
+import lach_01298.qmd.nco.tile.internal.energy.EnergyStorage;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank.TankInfo;
 import net.minecraft.util.math.BlockPos;
 
 import java.util.*;

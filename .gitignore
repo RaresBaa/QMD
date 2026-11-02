@@ -31,3 +31,7 @@ run/*
 *.suo
 /.vs
 /bin/
+
+# python
+__pycache__/
+*.pyc

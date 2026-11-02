@@ -2,13 +2,13 @@ package lach_01298.qmd.machine.block;
 
 import lach_01298.qmd.QMD;
 import lach_01298.qmd.enums.BlockTypes.ProcessorType;
-import nc.block.tile.*;
+import lach_01298.qmd.nco.block.tile.*;
 import nc.init.NCItems;
-import nc.tile.ITileGui;
-import nc.tile.fluid.ITileFluid;
-import nc.tile.processor.IProcessor;
-import nc.util.BlockHelper;
-import nclegacy.tile.*;
+import lach_01298.qmd.nco.tile.ITileGui;
+import lach_01298.qmd.nco.tile.fluid.ITileFluid;
+import lach_01298.qmd.nco.tile.processor.IProcessor;
+import lach_01298.qmd.nco.util.BlockHelper;
+import lach_01298.qmd.nco.legacy.tile.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.*;
@@ -27,7 +27,7 @@ import net.minecraftforge.items.*;
 import javax.annotation.Nonnull;
 import java.util.Random;
 
-import static nc.block.property.BlockProperties.*;
+import static lach_01298.qmd.nco.block.property.BlockProperties.*;
 
 public class BlockQMDProcessor extends BlockSidedTile implements IActivatable, ITileType
 {

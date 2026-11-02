@@ -2,9 +2,9 @@ package lach_01298.qmd.liquefier.block;
 
 import lach_01298.qmd.liquefier.tile.TileLiquefierFluidPort;
 import lach_01298.qmd.tab.QMDTabs;
-import nc.block.hx.BlockHeatExchangerPart;
-import nc.block.tile.IActivatable;
-import nc.util.BlockHelper;
+import lach_01298.qmd.nco.block.hx.BlockHeatExchangerPart;
+import lach_01298.qmd.nco.block.tile.IActivatable;
+import lach_01298.qmd.nco.util.BlockHelper;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
@@ -15,8 +15,8 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import static nc.block.property.BlockProperties.ACTIVE;
-import static nc.block.property.BlockProperties.FACING_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.ACTIVE;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FACING_ALL;
 
 public class BlockLiquefierPort extends BlockHeatExchangerPart implements IActivatable
 {

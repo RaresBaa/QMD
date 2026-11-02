@@ -4,7 +4,7 @@ import lach_01298.qmd.QMDConstants;
 import lach_01298.qmd.particle.*;
 import lach_01298.qmd.recipe.QMDRecipeHandler;
 import lach_01298.qmd.recipe.ingredient.EmptyParticleIngredient;
-import nc.recipe.BasicRecipeHandler;
+import lach_01298.qmd.nco.recipe.BasicRecipeHandler;
 
 import java.util.*;
 

@@ -7,8 +7,8 @@ import lach_01298.qmd.recipes.QMDRecipes;
 import lach_01298.qmd.util.Units;
 import mezz.jei.api.IGuiHelper;
 import nc.radiation.RadiationHelper;
-import nc.util.Lang;
-import nc.util.UnitHelper;
+import lach_01298.qmd.nco.util.Lang;
+import lach_01298.qmd.nco.util.UnitHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.util.ResourceLocation;
@@ -71,7 +71,7 @@ public class OreLeacherRecipe extends JEIRecipeWrapper
 			tooltip.add(TextFormatting.LIGHT_PURPLE + BASE_POWER + " " + TextFormatting.WHITE + UnitHelper.prefix(this.getBaseProcessPower(), 5, "RF/t"));
 			double radiation = this.getBaseProcessRadiation();
 			if (radiation > 0.0) {
-				tooltip.add(TextFormatting.GOLD + BASE_RADIATION + " " + RadiationHelper.radsColoredPrefix(radiation, true));
+				tooltip.add(TextFormatting.GOLD + BASE_RADIATION + " " + RadiationHelper.radsPrefix(radiation, true));
 			}
 		}
 

@@ -30,6 +30,11 @@
                 "textures": {
                     "layer0": "qmd:items/particle_sources/source_calcium_48"
                 }
+            },
+            "plutonium_beryllium": {
+                "textures": {
+                    "layer0": "qmd:items/particle_sources/source_plutonium_beryllium"
+                }
             }
         }
     }

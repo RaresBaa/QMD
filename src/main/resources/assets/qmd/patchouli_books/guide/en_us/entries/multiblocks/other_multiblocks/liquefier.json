@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "text",
-			"text": "Liquefiers are used to create large amounts of cryogenic fluids used to cool accelerators. They are much faster and more efficient than their smaller counterpart, the supercooler, though they are much larger and more complex. This chapter goes over how liquefiers are built and work. For info on systems that use them like $(l:progression/stage_0#air_distillation)cryogenic air distillation$() or $(l:progression/stage_0#accelerator_coolant)accelerator cooling loops$() see the links."
+			"text": "Liquefiers are used to create large amounts of cryogenic fluids used to cool accelerators. They are much faster and more efficient than their smaller counterpart, the supercooler, though they are much larger and more complex. This chapter goes over how liquefiers are built and work. For info on systems that use them like $(l:progression/stage_0#air_distillation)cryogenic air separation$() or $(l:progression/stage_0#accelerator_coolant)accelerator cooling loops$() see the links."
 		},
 		{
             "type": "diagram_high",
@@ -17,26 +17,26 @@
 			"anchor": "construction",
             "type": "text",
             "title": "Construction",
-            "text": "Liquefiers are a type of heat exchanger and thus are made of a cuboid frame of Heat Exchanger Casing. The faces (not occupied by other blocks) are either Heat Exchanger Casing or Heat Exchanger Glass. The inside layer one block above the bottom must be made of either Heat Exchanger Shell Baffles or Liquefier Expansion Nozzles. The top section above the layer of shell baffles and expansion nozzles forms the heat exchanger section of the "
+            "text": "Liquefiers are made of a cuboid frame of Liquefier Casing. The faces (not occupied by other blocks) are either Liquefier Casing or Liquefier Glass. The inside layer one block above the bottom must be made of either Liquefier Shell Baffles or Liquefier Expansion Nozzles. The top section above the layer of shell baffles and expansion nozzles forms the heat exchanging section of the "
         },
 		{
             "type": "diagram_low",
             "image": "qmd:textures/gui/book_images/liquefier_empty.png",
-            "text": "multiblock and thus must have a Heat Exchanger Fluid Inlet and Outlet. There must also be at least one Liquefier Energy Port, Liquefier Fluid Port in input and output mode, and of course the Liquefier Controller.$(br)Empty example Below."
+            "text": "multiblock and thus must have a Liquefier Coolant Inlet and Outlet. There must also be at least one Liquefier Energy Port, Liquefier Fluid Port in input and output mode, and of course the Liquefier Controller.$(br)Empty example Below."
         },
 		{
             "type": "text",
-            "text": "On the top face there must be at least the same if not more Liquefier Compressors than Liquefier Expansion Nozzles that were used in the shell baffle and expansion nozzle layer. The compressors can be any combination of the various types. The types affect the power and coolant usage of the liquefier.$(br)The heat exchanger section is where Heat Exchanger Tubes are placed to connect each expansion nozzle to a compressor. The type of tube used affects the heat"
+            "text": "On the top face there must be at least the same if not more Liquefier Compressors than Liquefier Expansion Nozzles that were used in the shell baffle and expansion nozzle layer. The compressors can be any combination of the various types. The types affect the power and coolant usage of the liquefier.$(br)The heat exchanging section is where Liquefier Tubes are placed to connect each expansion nozzle to a compressor. The type of tube used affects the heat"
         },
 		{
             "type": "diagram_low",
             "image": "qmd:textures/gui/book_images/liquefier_full.png",
-            "text": "conductivity and thus tubes with a lower heat transfer coefficient will require more blocks to transfer the same amount of heat.$(br)Below a complete liquefier with the expansion nozzle connected to a compressor via heat exchanger tubes."
+            "text": "conductivity and thus tubes with a lower heat transfer coefficient will require more blocks to transfer the same amount of heat.$(br)Below a complete liquefier with the expansion nozzle connected to a compressor via liquefier tubes."
         },
 		{
             "type": "diagram_low",
             "image": "qmd:textures/gui/book_images/liquefier_hx_1.png",
-            "text": "The path the heat exchanger tubes make from a compressor to a nozzle matters. Ideally the path should be as long as possible to allow the most heat transfer. The shell flow i.e. from the heat exchanger inlet to the outlet also matters and should ideally intersect all "
+            "text": "The path the liquefier tubes make from a compressor to a nozzle matters. Ideally the path should be as long as possible to allow the most heat transfer. The shell flow i.e. from the coolant inlet to the outlet also matters and should ideally intersect all "
         },
 		{
             "type": "diagram_low",
@@ -45,11 +45,11 @@
         },
         {
 			"type": "text",
-            "text": "The shell flow is controlled just like a regular heat exchanger with either baffle blocks or as shown in the previous images with tubes set to have baffles on particular faces with a multitool. $(l)The direction of the shell flow relative to tube flow$() (e.g. coflow or contraflow) $(l)does not matter$()." 
+            "text": "The shell flow is controlled with either baffle blocks or as shown in the previous images with tubes set to have baffles on particular faces with a multitool. $(l)The direction of the shell flow relative to tube flow$() (e.g. coflow or contraflow) $(l)does not matter$()." 
         },
         {
 			"type": "text",
-            "text": "" 
+            "text": "Liquefiers have their own casing, glass, baffles, inlets, outlets and tubes. The heat exchanger blocks from Nuclearcraft can't be used in a liquefier, and liquefier parts can't be used in a Nuclearcraft heat exchanger." 
         },
         {
             "anchor": "operation",
@@ -59,7 +59,7 @@
         },
         {
 			"type": "text",
-            "text": "a coolant feed into the Heat Exchanger Inlet. The input temperature of the coolant is important; $(l)it must be below the inversion temperature$() of the gas for the liquefier to work. The inversion temperature and other important recipe information for the gas can be seen in the JEI liquefier liquefaction category, and the temperature of the coolant can be seen in JEI liquefier coolant category." 
+            "text": "a coolant feed into the Liquefier Coolant Inlet. The input temperature of the coolant is important; $(l)it must be below the inversion temperature$() of the gas for the liquefier to work. The inversion temperature and other important recipe information for the gas can be seen in the JEI liquefier liquefaction category, and the temperature of the coolant can be seen in JEI liquefier coolant category." 
         },
         {
 			"type": "text",
@@ -75,7 +75,7 @@
         },
         {
 			"type": "text",
-            "text": "of the compressors, which is defined similarly to the mean heat efficiency as $(br)$(l)ε=ε₁^(1/N)*ε^(1/N)*...$()$(br)where $(l)εⱼ$() is the energy efficiency of the $(l)j$()-th compressor.$(br2)The maximum amount of heat per tick transferred  by an $(l)individual$() heat exchanger tube block is similar as in a heat exchanger $(l)hⱼ=κⱼΔT$(), where $(l)κⱼ$() is the heat transfer coefficient of the tube block and $(l)ΔT$() is the mean temperature difference." 
+            "text": "of the compressors, which is defined similarly to the mean heat efficiency as $(br)$(l)ε=ε₁^(1/N)*ε^(1/N)*...$()$(br)where $(l)εⱼ$() is the energy efficiency of the $(l)j$()-th compressor.$(br2)The maximum amount of heat per tick transferred  by an $(l)individual$() liquefier tube block is $(l)hⱼ=κⱼΔT$(), where $(l)κⱼ$() is the heat transfer coefficient of the tube block and $(l)ΔT$() is the mean temperature difference." 
         },
         {
 			"type": "text",
@@ -107,12 +107,12 @@
         },
 		{
 			"type": "text",
-            "text": "individual nozzle values. e.g $(l)W=w₁+w₂+...$() and if all the values are the same between each nozzle then it is just multiplied by the number of nozzles e.g. $(l)W=Nw$() $(br2)The final thing for operation you should know is that like all heat exchanger multiblock types the liquefier requires a redstone signal to the controller to turn on.$(br)The next section goes over a worked example." 
+            "text": "individual nozzle values. e.g $(l)W=w₁+w₂+...$() and if all the values are the same between each nozzle then it is just multiplied by the number of nozzles e.g. $(l)W=Nw$() $(br2)The final thing for operation you should know is that the liquefier requires a redstone signal to the controller to turn on.$(br)The next section goes over a worked example." 
         },
         {
 			"title": "Worked Example",
 			"type": "text",
-            "text": "You might be thinking the last section was very complicated (and it was to give all the details), but how do I $(l)actually$() design a liquefier? Well, here is a worked example to help you out.$(br2)First, we must decide what our desired output is. Let's say we want to make 64 mB/t of Liquid Air because we will certainly need it for our cryogenic distillation setups." 
+            "text": "You might be thinking the last section was very complicated (and it was to give all the details), but how do I $(l)actually$() design a liquefier? Well, here is a worked example to help you out.$(br2)First, we must decide what our desired output is. Let's say we want to make 64 mB/t of Liquid Air because we will certainly need it for our air separation setups." 
         },
         {
 			"type": "text",
@@ -164,13 +164,13 @@
         },
 		{
 			"type": "text",
-            "text": "'wall' of baffles to let the shell flow into the next slice. The next slice is identical to the first except there is no heat exchanger inlet and now the shell flow goes in the opposite direction relative to the tube flow in the previous slice, starting at the hole at the top right from the previous slice down to a hole at the bottom left in the baffle wall that separates it from the third layer. This alternating shell flow pattern repeats for the third and fourth slices until at the end of the path" 
+            "text": "'wall' of baffles to let the shell flow into the next slice. The next slice is identical to the first except there is no coolant inlet and now the shell flow goes in the opposite direction relative to the tube flow in the previous slice, starting at the hole at the top right from the previous slice down to a hole at the bottom left in the baffle wall that separates it from the third layer. This alternating shell flow pattern repeats for the third and fourth slices until at the end of the path" 
 		},
         {
 			
             "type": "diagram_low",
             "image": "qmd:textures/gui/book_images/liquefier_example_complete.png",
-            "text": "the shell flow goes into a heat exchanger outlet in the same position as the inlet on the first slice. Finally the energy, fluid ports and controller are added wherever. Below is the complete liquefier being supplied with water from infinite water sources and "
+            "text": "the shell flow goes into a coolant outlet in the same position as the inlet on the first slice. Finally the energy, fluid ports and controller are added wherever. Below is the complete liquefier being supplied with water from infinite water sources and "
         },
 		{
 			
@@ -192,12 +192,12 @@
 		{
 			
             "type": "text",
-            "text": "the mean energy $(l)ε$() and heat $(l)θ$() efficiencies, and the pressure efficiency $(l)η$().$(br)Also in the GUI a button in the top right has appeared. Pressing this will $(l)void all$() the fluids currently in the liquefier.$(br)Lastly some notes and tips. First, we could have made the liquefier with a separate heat exchanger inlet and outlet for each slice if we removed the hole in each baffle wall. It is up to you if you want one or multiple sets of inlets and outlets on a liquefier."
+            "text": "the mean energy $(l)ε$() and heat $(l)θ$() efficiencies, and the pressure efficiency $(l)η$().$(br)Also in the GUI a button in the top right has appeared. Pressing this will $(l)void all$() the fluids currently in the liquefier.$(br)Lastly some notes and tips. First, we could have made the liquefier with a separate coolant inlet and outlet for each slice if we removed the hole in each baffle wall. It is up to you if you want one or multiple sets of inlets and outlets on a liquefier."
         },
 		{
 			
             "type": "text",
-            "text": "Secondly, the compressors not connected to a tube can be placed anywhere on the top. They don't have to be touching other compressors or be in the same slice, all that matters is the number of them. Finally, a helpful tip constructing the heat exchanging tubes. Shift placing a tube onto another tube will copy its configuration to the tube placed. That is all its connections and baffle sides."
+            "text": "Secondly, the compressors not connected to a tube can be placed anywhere on the top. They don't have to be touching other compressors or be in the same slice, all that matters is the number of them. Finally, a helpful tip constructing the liquefier tubes. Shift placing a tube onto another tube will copy its configuration to the tube placed. That is all its connections and baffle sides."
         },
 		{
 			

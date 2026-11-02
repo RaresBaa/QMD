@@ -7,7 +7,7 @@ import lach_01298.qmd.machine.tile.TileQMDProcessors.*;
 import lach_01298.qmd.multiblock.container.ContainerAcceleratorIonSource;
 import lach_01298.qmd.multiblock.gui.GUIAcceleratorIonSource;
 import lach_01298.qmd.tile.TileCreativeParticleSource;
-import nclegacy.container.ContainerMachineConfigLegacy;
+import lach_01298.qmd.nco.legacy.container.ContainerMachineConfigLegacy;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;

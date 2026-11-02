@@ -2,7 +2,7 @@ package lach_01298.qmd.block;
 
 import lach_01298.qmd.enums.MaterialTypes.LuminousPaintType;
 import lach_01298.qmd.item.QMDItems;
-import nc.block.NCBlock;
+import lach_01298.qmd.nco.block.NCBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.*;
@@ -16,7 +16,7 @@ import net.minecraftforge.fml.relauncher.*;
 import javax.annotation.Nullable;
 import java.util.Random;
 
-import static nc.block.property.BlockProperties.FACING_ALL;
+import static lach_01298.qmd.nco.block.property.BlockProperties.FACING_ALL;
 
 public class BlockLuminousPaint extends NCBlock
 {

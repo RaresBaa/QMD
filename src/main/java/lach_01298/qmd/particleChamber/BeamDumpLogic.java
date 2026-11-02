@@ -8,8 +8,8 @@ import lach_01298.qmd.multiblock.network.*;
 import lach_01298.qmd.particle.ParticleStack;
 import lach_01298.qmd.particleChamber.tile.*;
 import lach_01298.qmd.recipe.*;
-import nc.tile.internal.fluid.Tank;
-import nc.tile.multiblock.TilePartAbstract.SyncReason;
+import lach_01298.qmd.nco.tile.internal.fluid.Tank;
+import lach_01298.qmd.nco.tile.multiblock.TilePartAbstract.SyncReason;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
@@ -20,7 +20,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import java.util.*;
 
 import static lach_01298.qmd.recipes.QMDRecipes.beam_dump;
-import static nc.block.property.BlockProperties.ACTIVE;
+import static lach_01298.qmd.nco.block.property.BlockProperties.ACTIVE;
 
 
 public class BeamDumpLogic extends ParticleChamberLogic

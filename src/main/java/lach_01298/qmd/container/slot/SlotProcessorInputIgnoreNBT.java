@@ -1,7 +1,7 @@
 package lach_01298.qmd.container.slot;
 
 import lach_01298.qmd.recipe.QMDRecipeHandler;
-import nc.tile.inventory.ITileInventory;
+import lach_01298.qmd.nco.tile.inventory.ITileInventory;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 
